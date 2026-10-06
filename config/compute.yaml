@@ -1,0 +1,6 @@
+version: PHASE9_1_CONSERVATIVE_V1
+max_total_threads: 4
+duckdb_threads: 2
+xgboost_threads: 2
+catboost_threads: 2
+joblib_threads: 2

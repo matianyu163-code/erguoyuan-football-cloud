@@ -1,0 +1,14 @@
+{
+  "mode": "BLIND_TEST_R3",
+  "version": "R3_NATIONAL_DC_POLICY_V1",
+  "model_order": ["DIXON_COLES_V1", "NATIONAL_HIERARCHICAL_PRIOR", "ELO_V1", "UNAVAILABLE"],
+  "minimum_team_training_matches": 13,
+  "threshold_basis": "First quartile of per-team match counts in the fixed 2023-10-05 to 2026-10-04 qualifier and Nations League national training sample; 25th percentile = 13",
+  "friendly_policy": "EXCLUDED",
+  "cup_policy": "EXCLUDED_WHEN_SOURCE_SCORE_MAY_INCLUDE_EXTRA_TIME",
+  "market_required": false,
+  "fallback_status": {
+    "NATIONAL_HIERARCHICAL_PRIOR": "UNAVAILABLE_NO_FROZEN_ARTIFACT",
+    "ELO_V1": "UNAVAILABLE_NO_FROZEN_NATIONAL_ARTIFACT"
+  }
+}

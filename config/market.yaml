@@ -1,0 +1,41 @@
+# Initial operational controls; not all default values are validated on real OOS data.
+config_version: MARKET_ENGINE_V1_PROVISIONAL
+consensus_method: MEDIAN
+minimum_bookmakers: 2
+trim_fraction: 0.1
+# Guardrails are explicitly provisional until a frozen train/validation review is available.
+maximum_overround:
+  MATCH_1X2: 0.20
+  ASIAN_HANDICAP: 0.20
+  TOTALS: 0.20
+  SPORTTERY_1X2: 0.20
+  SPORTTERY_HANDICAP_1X2: 0.20
+freshness_seconds_by_horizon:
+  T_MINUS_24H: 86400
+  T_MINUS_6H: 21600
+  T_MINUS_3H: 10800
+  T_MINUS_60M: 3600
+  T_MINUS_15M: 900
+  CUSTOM: 21600
+horizon_tolerance_seconds:
+  T_MINUS_24H: 10800
+  T_MINUS_6H: 5400
+  T_MINUS_3H: 2700
+  T_MINUS_60M: 900
+  T_MINUS_15M: 300
+allowed_quality_statuses: [GOOD, ACCEPTABLE]
+implied_goals_max_score: 12
+maximum_goal_fit_error: 0.12
+maximum_market_freshness_seconds: 86400
+require_native_timestamp_for_backtest: true
+devig_policy:
+  policy_version: DEVIG_POLICY_V1_PROVISIONAL
+  status: PROVISIONAL_NOT_VALIDATED
+  method_by_market:
+    MATCH_1X2: POWER
+    ASIAN_HANDICAP: MULTIPLICATIVE
+    TOTALS: MULTIPLICATIVE
+    SPORTTERY_1X2: MULTIPLICATIVE
+    SPORTTERY_HANDICAP_1X2: MULTIPLICATIVE
+bookmaker_weights: {}
+weight_evidence_hash: null

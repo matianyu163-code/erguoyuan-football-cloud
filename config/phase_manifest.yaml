@@ -1,0 +1,57 @@
+phase: "9"
+name: DEPENDENCY-AWARE META STACKING AND PROBABILITY CALIBRATION
+status: PARTIAL
+reason: AWAITING_FINAL_HOLDOUT
+public_interfaces:
+  - RealDataWarehouse
+  - HistoricalCoverageMatrix
+  - DataQualityReport
+  - CanonicalPredictionResult
+  - BaseOutputAdapter
+  - CoreReportV2PreviewAdapter
+  - Phase9GateReport
+  - TemporalEligibilityPolicy
+  - TemporalEligibilityValidator
+  - KickoffEnrichmentLayer
+  - DATE_SAFE_BATCH real OOS and metrics
+  - UnifiedRealOOSRunner
+  - RealOOSPredictionMatrix
+  - RealDateSafeMLDatasetBuilder
+  - RealMLOOSRunner
+  - Phase9CandidateBuilder
+  - Phase8.2 deterministic audit
+  - VerifiedCandidate
+  - META_NO_MARKET_V1
+  - PredictionLineageValidator
+  - MetaRawPrediction
+  - CalibratedCoreProbability
+  - ModelDisagreementReport
+  - MetaPromotionGate
+  - MulticlassCalibrator
+  - MetaArtifact
+  - DevelopmentCoreOutput
+  - Phase9 deterministic audit
+  - MLFeatureBuilder
+  - MLFeatureStore
+  - MLDatasetBuilder
+  - CoreXGBoostModel
+  - CoreCatBoostModel
+  - MLModelRegistry
+  - MLModelRunner
+protected_interfaces:
+  - ModelPrediction
+  - PredictionSnapshot
+  - V5.1 output contract
+critical_tests:
+  - tests/test_phase8_bootstrap.py
+  - tests/phase8_1
+  - tests/phase8_2
+  - tests/phase9
+  - tests/ml
+  - tests/markets
+  - tests/integration/test_market_bayes.py
+  - tests/integration/test_phase5_strength_models.py
+  - tests/integration/test_phase3_models.py
+  - tests/network
+  - tests/pit
+  - tests/unit/test_v51.py

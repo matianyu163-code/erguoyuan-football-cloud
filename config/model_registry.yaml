@@ -1,0 +1,100 @@
+models:
+  - model_id: DIXON_COLES_V1
+    version: 1.0.0
+    implementation_type: REAL_IMPLEMENTATION
+    module: erguoyuan_football.models.dixon_coles
+    heavy_model: false
+    requirements: [historical_goals]
+    artifact_strategy: content_hash
+    batch_support: true
+    enabled: true
+  - model_id: BIVARIATE_POISSON_V1
+    version: 1.0.0
+    implementation_type: REAL_IMPLEMENTATION
+    module: erguoyuan_football.models.bivariate_poisson
+    heavy_model: false
+    requirements: [historical_goals]
+    artifact_strategy: content_hash
+    batch_support: true
+    enabled: true
+  - model_id: BAYESIAN_HIERARCHICAL_V1
+    version: 1.0.0
+    implementation_type: REAL_IMPLEMENTATION
+    module: erguoyuan_football.models.hierarchical_bayes
+    heavy_model: true
+    requirements: [historical_goals]
+    artifact_strategy: content_hash
+    batch_support: true
+    enabled: true
+  - model_id: ELO_V1
+    version: 1.0.0
+    implementation_type: REAL_IMPLEMENTATION
+    module: erguoyuan_football.models.elo
+    heavy_model: false
+    requirements: [historical_results]
+    artifact_strategy: content_hash
+    batch_support: true
+    enabled: true
+  - model_id: PI_RATING_V1
+    version: 1.0.0
+    implementation_type: REAL_IMPLEMENTATION
+    module: erguoyuan_football.models.pi_rating
+    heavy_model: false
+    requirements: [historical_goals]
+    artifact_strategy: content_hash
+    batch_support: true
+    enabled: true
+  - model_id: DYNAMIC_BAYESIAN_POISSON_V1
+    version: 1.0.0
+    implementation_type: REAL_IMPLEMENTATION
+    module: erguoyuan_football.models.dynamic_bayes.model
+    heavy_model: false
+    requirements: [historical_goals]
+    artifact_strategy: content_hash
+    batch_support: true
+    enabled: true
+  - model_id: CORE_SPI_LIKE_V1
+    version: 1.0.0
+    implementation_type: LIKE_IMPLEMENTATION
+    module: erguoyuan_football.models.spi.model
+    heavy_model: false
+    requirements: [historical_results]
+    artifact_strategy: content_hash
+    batch_support: true
+    enabled: true
+  - model_id: CORE_OPTA_XG_ELO_LIKE_V1
+    version: 1.0.0
+    implementation_type: LIKE_IMPLEMENTATION
+    module: erguoyuan_football.models.opta_like.model
+    heavy_model: false
+    requirements: [historical_results]
+    artifact_strategy: content_hash
+    batch_support: true
+    enabled: true
+  - model_id: HISTORICAL_MARKET_BAYESIAN_POISSON_V1
+    version: 1.0.0
+    implementation_type: REAL_IMPLEMENTATION
+    module: erguoyuan_football.models.historical_market_bayes
+    heavy_model: false
+    requirements: [historical_goals, market_odds]
+    artifact_strategy: content_hash
+    batch_support: true
+    enabled: true
+  - model_id: CORE_XGBOOST_V1
+    version: 1.0.0
+    implementation_type: REAL_IMPLEMENTATION
+    module: erguoyuan_football.ml.xgboost_model
+    heavy_model: false
+    requirements: [ml_feature_vector]
+    artifact_strategy: content_hash
+    batch_support: true
+    enabled: true
+  - model_id: CORE_CATBOOST_V1
+    version: 1.0.0
+    implementation_type: REAL_IMPLEMENTATION
+    module: erguoyuan_football.ml.catboost_model
+    heavy_model: false
+    requirements: [ml_feature_vector]
+    artifact_strategy: content_hash
+    batch_support: true
+    enabled: true

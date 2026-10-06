@@ -1,0 +1,1497 @@
+[
+  {
+    "iso2": "AD",
+    "iso3": "AND",
+    "english": "Andorra",
+    "zh_cn": "安道尔"
+  },
+  {
+    "iso2": "AE",
+    "iso3": "ARE",
+    "english": "United Arab Emirates",
+    "zh_cn": "阿拉伯联合酋长国"
+  },
+  {
+    "iso2": "AF",
+    "iso3": "AFG",
+    "english": "Afghanistan",
+    "zh_cn": "阿富汗"
+  },
+  {
+    "iso2": "AG",
+    "iso3": "ATG",
+    "english": "Antigua & Barbuda",
+    "zh_cn": "安提瓜和巴布达"
+  },
+  {
+    "iso2": "AI",
+    "iso3": "AIA",
+    "english": "Anguilla",
+    "zh_cn": "安圭拉"
+  },
+  {
+    "iso2": "AL",
+    "iso3": "ALB",
+    "english": "Albania",
+    "zh_cn": "阿尔巴尼亚"
+  },
+  {
+    "iso2": "AM",
+    "iso3": "ARM",
+    "english": "Armenia",
+    "zh_cn": "亚美尼亚"
+  },
+  {
+    "iso2": "AO",
+    "iso3": "AGO",
+    "english": "Angola",
+    "zh_cn": "安哥拉"
+  },
+  {
+    "iso2": "AQ",
+    "iso3": "ATA",
+    "english": "Antarctica",
+    "zh_cn": "南极洲"
+  },
+  {
+    "iso2": "AR",
+    "iso3": "ARG",
+    "english": "Argentina",
+    "zh_cn": "阿根廷"
+  },
+  {
+    "iso2": "AS",
+    "iso3": "ASM",
+    "english": "American Samoa",
+    "zh_cn": "美属萨摩亚"
+  },
+  {
+    "iso2": "AT",
+    "iso3": "AUT",
+    "english": "Austria",
+    "zh_cn": "奥地利"
+  },
+  {
+    "iso2": "AU",
+    "iso3": "AUS",
+    "english": "Australia",
+    "zh_cn": "澳大利亚"
+  },
+  {
+    "iso2": "AW",
+    "iso3": "ABW",
+    "english": "Aruba",
+    "zh_cn": "阿鲁巴"
+  },
+  {
+    "iso2": "AX",
+    "iso3": "ALA",
+    "english": "Åland Islands",
+    "zh_cn": "奥兰群岛"
+  },
+  {
+    "iso2": "AZ",
+    "iso3": "AZE",
+    "english": "Azerbaijan",
+    "zh_cn": "阿塞拜疆"
+  },
+  {
+    "iso2": "BA",
+    "iso3": "BIH",
+    "english": "Bosnia & Herzegovina",
+    "zh_cn": "波斯尼亚和黑塞哥维那"
+  },
+  {
+    "iso2": "BB",
+    "iso3": "BRB",
+    "english": "Barbados",
+    "zh_cn": "巴巴多斯"
+  },
+  {
+    "iso2": "BD",
+    "iso3": "BGD",
+    "english": "Bangladesh",
+    "zh_cn": "孟加拉国"
+  },
+  {
+    "iso2": "BE",
+    "iso3": "BEL",
+    "english": "Belgium",
+    "zh_cn": "比利时"
+  },
+  {
+    "iso2": "BF",
+    "iso3": "BFA",
+    "english": "Burkina Faso",
+    "zh_cn": "布基纳法索"
+  },
+  {
+    "iso2": "BG",
+    "iso3": "BGR",
+    "english": "Bulgaria",
+    "zh_cn": "保加利亚"
+  },
+  {
+    "iso2": "BH",
+    "iso3": "BHR",
+    "english": "Bahrain",
+    "zh_cn": "巴林"
+  },
+  {
+    "iso2": "BI",
+    "iso3": "BDI",
+    "english": "Burundi",
+    "zh_cn": "布隆迪"
+  },
+  {
+    "iso2": "BJ",
+    "iso3": "BEN",
+    "english": "Benin",
+    "zh_cn": "贝宁"
+  },
+  {
+    "iso2": "BL",
+    "iso3": "BLM",
+    "english": "St. Barthélemy",
+    "zh_cn": "圣巴泰勒米"
+  },
+  {
+    "iso2": "BM",
+    "iso3": "BMU",
+    "english": "Bermuda",
+    "zh_cn": "百慕大"
+  },
+  {
+    "iso2": "BN",
+    "iso3": "BRN",
+    "english": "Brunei",
+    "zh_cn": "文莱"
+  },
+  {
+    "iso2": "BO",
+    "iso3": "BOL",
+    "english": "Bolivia",
+    "zh_cn": "玻利维亚"
+  },
+  {
+    "iso2": "BQ",
+    "iso3": "BES",
+    "english": "Caribbean Netherlands",
+    "zh_cn": "荷属加勒比区"
+  },
+  {
+    "iso2": "BR",
+    "iso3": "BRA",
+    "english": "Brazil",
+    "zh_cn": "巴西"
+  },
+  {
+    "iso2": "BS",
+    "iso3": "BHS",
+    "english": "Bahamas",
+    "zh_cn": "巴哈马"
+  },
+  {
+    "iso2": "BT",
+    "iso3": "BTN",
+    "english": "Bhutan",
+    "zh_cn": "不丹"
+  },
+  {
+    "iso2": "BV",
+    "iso3": "BVT",
+    "english": "Bouvet Island",
+    "zh_cn": "布韦岛"
+  },
+  {
+    "iso2": "BW",
+    "iso3": "BWA",
+    "english": "Botswana",
+    "zh_cn": "博茨瓦纳"
+  },
+  {
+    "iso2": "BY",
+    "iso3": "BLR",
+    "english": "Belarus",
+    "zh_cn": "白俄罗斯"
+  },
+  {
+    "iso2": "BZ",
+    "iso3": "BLZ",
+    "english": "Belize",
+    "zh_cn": "伯利兹"
+  },
+  {
+    "iso2": "CA",
+    "iso3": "CAN",
+    "english": "Canada",
+    "zh_cn": "加拿大"
+  },
+  {
+    "iso2": "CC",
+    "iso3": "CCK",
+    "english": "Cocos (Keeling) Islands",
+    "zh_cn": "科科斯（基林）群岛"
+  },
+  {
+    "iso2": "CD",
+    "iso3": "COD",
+    "english": "Congo - Kinshasa",
+    "zh_cn": "刚果（金）"
+  },
+  {
+    "iso2": "CF",
+    "iso3": "CAF",
+    "english": "Central African Republic",
+    "zh_cn": "中非共和国"
+  },
+  {
+    "iso2": "CG",
+    "iso3": "COG",
+    "english": "Congo - Brazzaville",
+    "zh_cn": "刚果（布）"
+  },
+  {
+    "iso2": "CH",
+    "iso3": "CHE",
+    "english": "Switzerland",
+    "zh_cn": "瑞士"
+  },
+  {
+    "iso2": "CI",
+    "iso3": "CIV",
+    "english": "Côte d’Ivoire",
+    "zh_cn": "科特迪瓦"
+  },
+  {
+    "iso2": "CK",
+    "iso3": "COK",
+    "english": "Cook Islands",
+    "zh_cn": "库克群岛"
+  },
+  {
+    "iso2": "CL",
+    "iso3": "CHL",
+    "english": "Chile",
+    "zh_cn": "智利"
+  },
+  {
+    "iso2": "CM",
+    "iso3": "CMR",
+    "english": "Cameroon",
+    "zh_cn": "喀麦隆"
+  },
+  {
+    "iso2": "CN",
+    "iso3": "CHN",
+    "english": "China",
+    "zh_cn": "中国"
+  },
+  {
+    "iso2": "CO",
+    "iso3": "COL",
+    "english": "Colombia",
+    "zh_cn": "哥伦比亚"
+  },
+  {
+    "iso2": "CR",
+    "iso3": "CRI",
+    "english": "Costa Rica",
+    "zh_cn": "哥斯达黎加"
+  },
+  {
+    "iso2": "CU",
+    "iso3": "CUB",
+    "english": "Cuba",
+    "zh_cn": "古巴"
+  },
+  {
+    "iso2": "CV",
+    "iso3": "CPV",
+    "english": "Cape Verde",
+    "zh_cn": "佛得角"
+  },
+  {
+    "iso2": "CW",
+    "iso3": "CUW",
+    "english": "Curaçao",
+    "zh_cn": "库拉索"
+  },
+  {
+    "iso2": "CX",
+    "iso3": "CXR",
+    "english": "Christmas Island",
+    "zh_cn": "圣诞岛"
+  },
+  {
+    "iso2": "CY",
+    "iso3": "CYP",
+    "english": "Cyprus",
+    "zh_cn": "塞浦路斯"
+  },
+  {
+    "iso2": "CZ",
+    "iso3": "CZE",
+    "english": "Czechia",
+    "zh_cn": "捷克",
+    "aliases": ["Czech Republic", "捷克共和国"]
+  },
+  {
+    "iso2": "DE",
+    "iso3": "DEU",
+    "english": "Germany",
+    "zh_cn": "德国"
+  },
+  {
+    "iso2": "DJ",
+    "iso3": "DJI",
+    "english": "Djibouti",
+    "zh_cn": "吉布提"
+  },
+  {
+    "iso2": "DK",
+    "iso3": "DNK",
+    "english": "Denmark",
+    "zh_cn": "丹麦"
+  },
+  {
+    "iso2": "DM",
+    "iso3": "DMA",
+    "english": "Dominica",
+    "zh_cn": "多米尼克"
+  },
+  {
+    "iso2": "DO",
+    "iso3": "DOM",
+    "english": "Dominican Republic",
+    "zh_cn": "多米尼加共和国"
+  },
+  {
+    "iso2": "DZ",
+    "iso3": "DZA",
+    "english": "Algeria",
+    "zh_cn": "阿尔及利亚"
+  },
+  {
+    "iso2": "EC",
+    "iso3": "ECU",
+    "english": "Ecuador",
+    "zh_cn": "厄瓜多尔"
+  },
+  {
+    "iso2": "EE",
+    "iso3": "EST",
+    "english": "Estonia",
+    "zh_cn": "爱沙尼亚"
+  },
+  {
+    "iso2": "EG",
+    "iso3": "EGY",
+    "english": "Egypt",
+    "zh_cn": "埃及"
+  },
+  {
+    "iso2": "ER",
+    "iso3": "ERI",
+    "english": "Eritrea",
+    "zh_cn": "厄立特里亚"
+  },
+  {
+    "iso2": "ES",
+    "iso3": "ESP",
+    "english": "Spain",
+    "zh_cn": "西班牙"
+  },
+  {
+    "iso2": "ET",
+    "iso3": "ETH",
+    "english": "Ethiopia",
+    "zh_cn": "埃塞俄比亚"
+  },
+  {
+    "iso2": "FI",
+    "iso3": "FIN",
+    "english": "Finland",
+    "zh_cn": "芬兰"
+  },
+  {
+    "iso2": "FJ",
+    "iso3": "FJI",
+    "english": "Fiji",
+    "zh_cn": "斐济"
+  },
+  {
+    "iso2": "FK",
+    "iso3": "FLK",
+    "english": "Falkland Islands",
+    "zh_cn": "福克兰群岛"
+  },
+  {
+    "iso2": "FM",
+    "iso3": "FSM",
+    "english": "Micronesia",
+    "zh_cn": "密克罗尼西亚"
+  },
+  {
+    "iso2": "FO",
+    "iso3": "FRO",
+    "english": "Faroe Islands",
+    "zh_cn": "法罗群岛"
+  },
+  {
+    "iso2": "FR",
+    "iso3": "FRA",
+    "english": "France",
+    "zh_cn": "法国"
+  },
+  {
+    "iso2": "GA",
+    "iso3": "GAB",
+    "english": "Gabon",
+    "zh_cn": "加蓬"
+  },
+  {
+    "iso2": "GB",
+    "iso3": "GBR",
+    "english": "United Kingdom",
+    "zh_cn": "英国"
+  },
+  {
+    "iso2": "GD",
+    "iso3": "GRD",
+    "english": "Grenada",
+    "zh_cn": "格林纳达"
+  },
+  {
+    "iso2": "GE",
+    "iso3": "GEO",
+    "english": "Georgia",
+    "zh_cn": "格鲁吉亚"
+  },
+  {
+    "iso2": "GF",
+    "iso3": "GUF",
+    "english": "French Guiana",
+    "zh_cn": "法属圭亚那"
+  },
+  {
+    "iso2": "GG",
+    "iso3": "GGY",
+    "english": "Guernsey",
+    "zh_cn": "根西岛"
+  },
+  {
+    "iso2": "GH",
+    "iso3": "GHA",
+    "english": "Ghana",
+    "zh_cn": "加纳"
+  },
+  {
+    "iso2": "GI",
+    "iso3": "GIB",
+    "english": "Gibraltar",
+    "zh_cn": "直布罗陀"
+  },
+  {
+    "iso2": "GL",
+    "iso3": "GRL",
+    "english": "Greenland",
+    "zh_cn": "格陵兰"
+  },
+  {
+    "iso2": "GM",
+    "iso3": "GMB",
+    "english": "Gambia",
+    "zh_cn": "冈比亚"
+  },
+  {
+    "iso2": "GN",
+    "iso3": "GIN",
+    "english": "Guinea",
+    "zh_cn": "几内亚"
+  },
+  {
+    "iso2": "GP",
+    "iso3": "GLP",
+    "english": "Guadeloupe",
+    "zh_cn": "瓜德罗普"
+  },
+  {
+    "iso2": "GQ",
+    "iso3": "GNQ",
+    "english": "Equatorial Guinea",
+    "zh_cn": "赤道几内亚"
+  },
+  {
+    "iso2": "GR",
+    "iso3": "GRC",
+    "english": "Greece",
+    "zh_cn": "希腊"
+  },
+  {
+    "iso2": "GS",
+    "iso3": "SGS",
+    "english": "South Georgia & South Sandwich Islands",
+    "zh_cn": "南乔治亚和南桑威奇群岛"
+  },
+  {
+    "iso2": "GT",
+    "iso3": "GTM",
+    "english": "Guatemala",
+    "zh_cn": "危地马拉"
+  },
+  {
+    "iso2": "GU",
+    "iso3": "GUM",
+    "english": "Guam",
+    "zh_cn": "关岛"
+  },
+  {
+    "iso2": "GW",
+    "iso3": "GNB",
+    "english": "Guinea-Bissau",
+    "zh_cn": "几内亚比绍"
+  },
+  {
+    "iso2": "GY",
+    "iso3": "GUY",
+    "english": "Guyana",
+    "zh_cn": "圭亚那"
+  },
+  {
+    "iso2": "HK",
+    "iso3": "HKG",
+    "english": "Hong Kong SAR China",
+    "zh_cn": "中国香港特别行政区"
+  },
+  {
+    "iso2": "HM",
+    "iso3": "HMD",
+    "english": "Heard & McDonald Islands",
+    "zh_cn": "赫德岛和麦克唐纳群岛"
+  },
+  {
+    "iso2": "HN",
+    "iso3": "HND",
+    "english": "Honduras",
+    "zh_cn": "洪都拉斯"
+  },
+  {
+    "iso2": "HR",
+    "iso3": "HRV",
+    "english": "Croatia",
+    "zh_cn": "克罗地亚"
+  },
+  {
+    "iso2": "HT",
+    "iso3": "HTI",
+    "english": "Haiti",
+    "zh_cn": "海地"
+  },
+  {
+    "iso2": "HU",
+    "iso3": "HUN",
+    "english": "Hungary",
+    "zh_cn": "匈牙利"
+  },
+  {
+    "iso2": "ID",
+    "iso3": "IDN",
+    "english": "Indonesia",
+    "zh_cn": "印度尼西亚"
+  },
+  {
+    "iso2": "IE",
+    "iso3": "IRL",
+    "english": "Ireland",
+    "zh_cn": "爱尔兰"
+  },
+  {
+    "iso2": "IL",
+    "iso3": "ISR",
+    "english": "Israel",
+    "zh_cn": "以色列"
+  },
+  {
+    "iso2": "IM",
+    "iso3": "IMN",
+    "english": "Isle of Man",
+    "zh_cn": "马恩岛"
+  },
+  {
+    "iso2": "IN",
+    "iso3": "IND",
+    "english": "India",
+    "zh_cn": "印度"
+  },
+  {
+    "iso2": "IO",
+    "iso3": "IOT",
+    "english": "British Indian Ocean Territory",
+    "zh_cn": "英属印度洋领地"
+  },
+  {
+    "iso2": "IQ",
+    "iso3": "IRQ",
+    "english": "Iraq",
+    "zh_cn": "伊拉克"
+  },
+  {
+    "iso2": "IR",
+    "iso3": "IRN",
+    "english": "Iran",
+    "zh_cn": "伊朗"
+  },
+  {
+    "iso2": "IS",
+    "iso3": "ISL",
+    "english": "Iceland",
+    "zh_cn": "冰岛"
+  },
+  {
+    "iso2": "IT",
+    "iso3": "ITA",
+    "english": "Italy",
+    "zh_cn": "意大利"
+  },
+  {
+    "iso2": "JE",
+    "iso3": "JEY",
+    "english": "Jersey",
+    "zh_cn": "泽西岛"
+  },
+  {
+    "iso2": "JM",
+    "iso3": "JAM",
+    "english": "Jamaica",
+    "zh_cn": "牙买加"
+  },
+  {
+    "iso2": "JO",
+    "iso3": "JOR",
+    "english": "Jordan",
+    "zh_cn": "约旦"
+  },
+  {
+    "iso2": "JP",
+    "iso3": "JPN",
+    "english": "Japan",
+    "zh_cn": "日本"
+  },
+  {
+    "iso2": "KE",
+    "iso3": "KEN",
+    "english": "Kenya",
+    "zh_cn": "肯尼亚"
+  },
+  {
+    "iso2": "KG",
+    "iso3": "KGZ",
+    "english": "Kyrgyzstan",
+    "zh_cn": "吉尔吉斯斯坦"
+  },
+  {
+    "iso2": "KH",
+    "iso3": "KHM",
+    "english": "Cambodia",
+    "zh_cn": "柬埔寨"
+  },
+  {
+    "iso2": "KI",
+    "iso3": "KIR",
+    "english": "Kiribati",
+    "zh_cn": "基里巴斯"
+  },
+  {
+    "iso2": "KM",
+    "iso3": "COM",
+    "english": "Comoros",
+    "zh_cn": "科摩罗"
+  },
+  {
+    "iso2": "KN",
+    "iso3": "KNA",
+    "english": "St. Kitts & Nevis",
+    "zh_cn": "圣基茨和尼维斯"
+  },
+  {
+    "iso2": "KP",
+    "iso3": "PRK",
+    "english": "North Korea",
+    "zh_cn": "朝鲜"
+  },
+  {
+    "iso2": "KR",
+    "iso3": "KOR",
+    "english": "South Korea",
+    "zh_cn": "韩国"
+  },
+  {
+    "iso2": "KW",
+    "iso3": "KWT",
+    "english": "Kuwait",
+    "zh_cn": "科威特"
+  },
+  {
+    "iso2": "KY",
+    "iso3": "CYM",
+    "english": "Cayman Islands",
+    "zh_cn": "开曼群岛"
+  },
+  {
+    "iso2": "KZ",
+    "iso3": "KAZ",
+    "english": "Kazakhstan",
+    "zh_cn": "哈萨克斯坦"
+  },
+  {
+    "iso2": "LA",
+    "iso3": "LAO",
+    "english": "Laos",
+    "zh_cn": "老挝"
+  },
+  {
+    "iso2": "LB",
+    "iso3": "LBN",
+    "english": "Lebanon",
+    "zh_cn": "黎巴嫩"
+  },
+  {
+    "iso2": "LC",
+    "iso3": "LCA",
+    "english": "St. Lucia",
+    "zh_cn": "圣卢西亚"
+  },
+  {
+    "iso2": "LI",
+    "iso3": "LIE",
+    "english": "Liechtenstein",
+    "zh_cn": "列支敦士登"
+  },
+  {
+    "iso2": "LK",
+    "iso3": "LKA",
+    "english": "Sri Lanka",
+    "zh_cn": "斯里兰卡"
+  },
+  {
+    "iso2": "LR",
+    "iso3": "LBR",
+    "english": "Liberia",
+    "zh_cn": "利比里亚"
+  },
+  {
+    "iso2": "LS",
+    "iso3": "LSO",
+    "english": "Lesotho",
+    "zh_cn": "莱索托"
+  },
+  {
+    "iso2": "LT",
+    "iso3": "LTU",
+    "english": "Lithuania",
+    "zh_cn": "立陶宛"
+  },
+  {
+    "iso2": "LU",
+    "iso3": "LUX",
+    "english": "Luxembourg",
+    "zh_cn": "卢森堡"
+  },
+  {
+    "iso2": "LV",
+    "iso3": "LVA",
+    "english": "Latvia",
+    "zh_cn": "拉脱维亚"
+  },
+  {
+    "iso2": "LY",
+    "iso3": "LBY",
+    "english": "Libya",
+    "zh_cn": "利比亚"
+  },
+  {
+    "iso2": "MA",
+    "iso3": "MAR",
+    "english": "Morocco",
+    "zh_cn": "摩洛哥"
+  },
+  {
+    "iso2": "MC",
+    "iso3": "MCO",
+    "english": "Monaco",
+    "zh_cn": "摩纳哥"
+  },
+  {
+    "iso2": "MD",
+    "iso3": "MDA",
+    "english": "Moldova",
+    "zh_cn": "摩尔多瓦"
+  },
+  {
+    "iso2": "ME",
+    "iso3": "MNE",
+    "english": "Montenegro",
+    "zh_cn": "黑山"
+  },
+  {
+    "iso2": "MF",
+    "iso3": "MAF",
+    "english": "St. Martin",
+    "zh_cn": "法属圣马丁"
+  },
+  {
+    "iso2": "MG",
+    "iso3": "MDG",
+    "english": "Madagascar",
+    "zh_cn": "马达加斯加"
+  },
+  {
+    "iso2": "MH",
+    "iso3": "MHL",
+    "english": "Marshall Islands",
+    "zh_cn": "马绍尔群岛"
+  },
+  {
+    "iso2": "MK",
+    "iso3": "MKD",
+    "english": "North Macedonia",
+    "zh_cn": "北马其顿"
+  },
+  {
+    "iso2": "ML",
+    "iso3": "MLI",
+    "english": "Mali",
+    "zh_cn": "马里"
+  },
+  {
+    "iso2": "MM",
+    "iso3": "MMR",
+    "english": "Myanmar (Burma)",
+    "zh_cn": "缅甸"
+  },
+  {
+    "iso2": "MN",
+    "iso3": "MNG",
+    "english": "Mongolia",
+    "zh_cn": "蒙古"
+  },
+  {
+    "iso2": "MO",
+    "iso3": "MAC",
+    "english": "Macao SAR China",
+    "zh_cn": "中国澳门特别行政区"
+  },
+  {
+    "iso2": "MP",
+    "iso3": "MNP",
+    "english": "Northern Mariana Islands",
+    "zh_cn": "北马里亚纳群岛"
+  },
+  {
+    "iso2": "MQ",
+    "iso3": "MTQ",
+    "english": "Martinique",
+    "zh_cn": "马提尼克"
+  },
+  {
+    "iso2": "MR",
+    "iso3": "MRT",
+    "english": "Mauritania",
+    "zh_cn": "毛里塔尼亚"
+  },
+  {
+    "iso2": "MS",
+    "iso3": "MSR",
+    "english": "Montserrat",
+    "zh_cn": "蒙特塞拉特"
+  },
+  {
+    "iso2": "MT",
+    "iso3": "MLT",
+    "english": "Malta",
+    "zh_cn": "马耳他"
+  },
+  {
+    "iso2": "MU",
+    "iso3": "MUS",
+    "english": "Mauritius",
+    "zh_cn": "毛里求斯"
+  },
+  {
+    "iso2": "MV",
+    "iso3": "MDV",
+    "english": "Maldives",
+    "zh_cn": "马尔代夫"
+  },
+  {
+    "iso2": "MW",
+    "iso3": "MWI",
+    "english": "Malawi",
+    "zh_cn": "马拉维"
+  },
+  {
+    "iso2": "MX",
+    "iso3": "MEX",
+    "english": "Mexico",
+    "zh_cn": "墨西哥"
+  },
+  {
+    "iso2": "MY",
+    "iso3": "MYS",
+    "english": "Malaysia",
+    "zh_cn": "马来西亚"
+  },
+  {
+    "iso2": "MZ",
+    "iso3": "MOZ",
+    "english": "Mozambique",
+    "zh_cn": "莫桑比克"
+  },
+  {
+    "iso2": "NA",
+    "iso3": "NAM",
+    "english": "Namibia",
+    "zh_cn": "纳米比亚"
+  },
+  {
+    "iso2": "NC",
+    "iso3": "NCL",
+    "english": "New Caledonia",
+    "zh_cn": "新喀里多尼亚"
+  },
+  {
+    "iso2": "NE",
+    "iso3": "NER",
+    "english": "Niger",
+    "zh_cn": "尼日尔"
+  },
+  {
+    "iso2": "NF",
+    "iso3": "NFK",
+    "english": "Norfolk Island",
+    "zh_cn": "诺福克岛"
+  },
+  {
+    "iso2": "NG",
+    "iso3": "NGA",
+    "english": "Nigeria",
+    "zh_cn": "尼日利亚"
+  },
+  {
+    "iso2": "NI",
+    "iso3": "NIC",
+    "english": "Nicaragua",
+    "zh_cn": "尼加拉瓜"
+  },
+  {
+    "iso2": "NL",
+    "iso3": "NLD",
+    "english": "Netherlands",
+    "zh_cn": "荷兰"
+  },
+  {
+    "iso2": "NO",
+    "iso3": "NOR",
+    "english": "Norway",
+    "zh_cn": "挪威"
+  },
+  {
+    "iso2": "NP",
+    "iso3": "NPL",
+    "english": "Nepal",
+    "zh_cn": "尼泊尔"
+  },
+  {
+    "iso2": "NR",
+    "iso3": "NRU",
+    "english": "Nauru",
+    "zh_cn": "瑙鲁"
+  },
+  {
+    "iso2": "NU",
+    "iso3": "NIU",
+    "english": "Niue",
+    "zh_cn": "纽埃"
+  },
+  {
+    "iso2": "NZ",
+    "iso3": "NZL",
+    "english": "New Zealand",
+    "zh_cn": "新西兰"
+  },
+  {
+    "iso2": "OM",
+    "iso3": "OMN",
+    "english": "Oman",
+    "zh_cn": "阿曼"
+  },
+  {
+    "iso2": "PA",
+    "iso3": "PAN",
+    "english": "Panama",
+    "zh_cn": "巴拿马"
+  },
+  {
+    "iso2": "PE",
+    "iso3": "PER",
+    "english": "Peru",
+    "zh_cn": "秘鲁"
+  },
+  {
+    "iso2": "PF",
+    "iso3": "PYF",
+    "english": "French Polynesia",
+    "zh_cn": "法属波利尼西亚"
+  },
+  {
+    "iso2": "PG",
+    "iso3": "PNG",
+    "english": "Papua New Guinea",
+    "zh_cn": "巴布亚新几内亚"
+  },
+  {
+    "iso2": "PH",
+    "iso3": "PHL",
+    "english": "Philippines",
+    "zh_cn": "菲律宾"
+  },
+  {
+    "iso2": "PK",
+    "iso3": "PAK",
+    "english": "Pakistan",
+    "zh_cn": "巴基斯坦"
+  },
+  {
+    "iso2": "PL",
+    "iso3": "POL",
+    "english": "Poland",
+    "zh_cn": "波兰"
+  },
+  {
+    "iso2": "PM",
+    "iso3": "SPM",
+    "english": "St. Pierre & Miquelon",
+    "zh_cn": "圣皮埃尔和密克隆群岛"
+  },
+  {
+    "iso2": "PN",
+    "iso3": "PCN",
+    "english": "Pitcairn Islands",
+    "zh_cn": "皮特凯恩群岛"
+  },
+  {
+    "iso2": "PR",
+    "iso3": "PRI",
+    "english": "Puerto Rico",
+    "zh_cn": "波多黎各"
+  },
+  {
+    "iso2": "PS",
+    "iso3": "PSE",
+    "english": "Palestinian Territories",
+    "zh_cn": "巴勒斯坦领土"
+  },
+  {
+    "iso2": "PT",
+    "iso3": "PRT",
+    "english": "Portugal",
+    "zh_cn": "葡萄牙"
+  },
+  {
+    "iso2": "PW",
+    "iso3": "PLW",
+    "english": "Palau",
+    "zh_cn": "帕劳"
+  },
+  {
+    "iso2": "PY",
+    "iso3": "PRY",
+    "english": "Paraguay",
+    "zh_cn": "巴拉圭"
+  },
+  {
+    "iso2": "QA",
+    "iso3": "QAT",
+    "english": "Qatar",
+    "zh_cn": "卡塔尔"
+  },
+  {
+    "iso2": "RE",
+    "iso3": "REU",
+    "english": "Réunion",
+    "zh_cn": "留尼汪"
+  },
+  {
+    "iso2": "RO",
+    "iso3": "ROU",
+    "english": "Romania",
+    "zh_cn": "罗马尼亚"
+  },
+  {
+    "iso2": "RS",
+    "iso3": "SRB",
+    "english": "Serbia",
+    "zh_cn": "塞尔维亚"
+  },
+  {
+    "iso2": "RU",
+    "iso3": "RUS",
+    "english": "Russia",
+    "zh_cn": "俄罗斯"
+  },
+  {
+    "iso2": "RW",
+    "iso3": "RWA",
+    "english": "Rwanda",
+    "zh_cn": "卢旺达"
+  },
+  {
+    "iso2": "SA",
+    "iso3": "SAU",
+    "english": "Saudi Arabia",
+    "zh_cn": "沙特阿拉伯"
+  },
+  {
+    "iso2": "SB",
+    "iso3": "SLB",
+    "english": "Solomon Islands",
+    "zh_cn": "所罗门群岛"
+  },
+  {
+    "iso2": "SC",
+    "iso3": "SYC",
+    "english": "Seychelles",
+    "zh_cn": "塞舌尔"
+  },
+  {
+    "iso2": "SD",
+    "iso3": "SDN",
+    "english": "Sudan",
+    "zh_cn": "苏丹"
+  },
+  {
+    "iso2": "SE",
+    "iso3": "SWE",
+    "english": "Sweden",
+    "zh_cn": "瑞典"
+  },
+  {
+    "iso2": "SG",
+    "iso3": "SGP",
+    "english": "Singapore",
+    "zh_cn": "新加坡"
+  },
+  {
+    "iso2": "SH",
+    "iso3": "SHN",
+    "english": "St. Helena",
+    "zh_cn": "圣赫勒拿"
+  },
+  {
+    "iso2": "SI",
+    "iso3": "SVN",
+    "english": "Slovenia",
+    "zh_cn": "斯洛文尼亚"
+  },
+  {
+    "iso2": "SJ",
+    "iso3": "SJM",
+    "english": "Svalbard & Jan Mayen",
+    "zh_cn": "斯瓦尔巴和扬马延"
+  },
+  {
+    "iso2": "SK",
+    "iso3": "SVK",
+    "english": "Slovakia",
+    "zh_cn": "斯洛伐克"
+  },
+  {
+    "iso2": "SL",
+    "iso3": "SLE",
+    "english": "Sierra Leone",
+    "zh_cn": "塞拉利昂"
+  },
+  {
+    "iso2": "SM",
+    "iso3": "SMR",
+    "english": "San Marino",
+    "zh_cn": "圣马力诺"
+  },
+  {
+    "iso2": "SN",
+    "iso3": "SEN",
+    "english": "Senegal",
+    "zh_cn": "塞内加尔"
+  },
+  {
+    "iso2": "SO",
+    "iso3": "SOM",
+    "english": "Somalia",
+    "zh_cn": "索马里"
+  },
+  {
+    "iso2": "SR",
+    "iso3": "SUR",
+    "english": "Suriname",
+    "zh_cn": "苏里南"
+  },
+  {
+    "iso2": "SS",
+    "iso3": "SSD",
+    "english": "South Sudan",
+    "zh_cn": "南苏丹"
+  },
+  {
+    "iso2": "ST",
+    "iso3": "STP",
+    "english": "São Tomé & Príncipe",
+    "zh_cn": "圣多美和普林西比"
+  },
+  {
+    "iso2": "SV",
+    "iso3": "SLV",
+    "english": "El Salvador",
+    "zh_cn": "萨尔瓦多"
+  },
+  {
+    "iso2": "SX",
+    "iso3": "SXM",
+    "english": "Sint Maarten",
+    "zh_cn": "荷属圣马丁"
+  },
+  {
+    "iso2": "SY",
+    "iso3": "SYR",
+    "english": "Syria",
+    "zh_cn": "叙利亚"
+  },
+  {
+    "iso2": "SZ",
+    "iso3": "SWZ",
+    "english": "Eswatini",
+    "zh_cn": "斯威士兰"
+  },
+  {
+    "iso2": "TC",
+    "iso3": "TCA",
+    "english": "Turks & Caicos Islands",
+    "zh_cn": "特克斯和凯科斯群岛"
+  },
+  {
+    "iso2": "TD",
+    "iso3": "TCD",
+    "english": "Chad",
+    "zh_cn": "乍得"
+  },
+  {
+    "iso2": "TF",
+    "iso3": "ATF",
+    "english": "French Southern Territories",
+    "zh_cn": "法属南部领地"
+  },
+  {
+    "iso2": "TG",
+    "iso3": "TGO",
+    "english": "Togo",
+    "zh_cn": "多哥"
+  },
+  {
+    "iso2": "TH",
+    "iso3": "THA",
+    "english": "Thailand",
+    "zh_cn": "泰国"
+  },
+  {
+    "iso2": "TJ",
+    "iso3": "TJK",
+    "english": "Tajikistan",
+    "zh_cn": "塔吉克斯坦"
+  },
+  {
+    "iso2": "TK",
+    "iso3": "TKL",
+    "english": "Tokelau",
+    "zh_cn": "托克劳"
+  },
+  {
+    "iso2": "TL",
+    "iso3": "TLS",
+    "english": "Timor-Leste",
+    "zh_cn": "东帝汶"
+  },
+  {
+    "iso2": "TM",
+    "iso3": "TKM",
+    "english": "Turkmenistan",
+    "zh_cn": "土库曼斯坦"
+  },
+  {
+    "iso2": "TN",
+    "iso3": "TUN",
+    "english": "Tunisia",
+    "zh_cn": "突尼斯"
+  },
+  {
+    "iso2": "TO",
+    "iso3": "TON",
+    "english": "Tonga",
+    "zh_cn": "汤加"
+  },
+  {
+    "iso2": "TR",
+    "iso3": "TUR",
+    "english": "Türkiye",
+    "zh_cn": "土耳其"
+  },
+  {
+    "iso2": "TT",
+    "iso3": "TTO",
+    "english": "Trinidad & Tobago",
+    "zh_cn": "特立尼达和多巴哥"
+  },
+  {
+    "iso2": "TV",
+    "iso3": "TUV",
+    "english": "Tuvalu",
+    "zh_cn": "图瓦卢"
+  },
+  {
+    "iso2": "TW",
+    "iso3": "TWN",
+    "english": "Taiwan",
+    "zh_cn": "台湾"
+  },
+  {
+    "iso2": "TZ",
+    "iso3": "TZA",
+    "english": "Tanzania",
+    "zh_cn": "坦桑尼亚"
+  },
+  {
+    "iso2": "UA",
+    "iso3": "UKR",
+    "english": "Ukraine",
+    "zh_cn": "乌克兰"
+  },
+  {
+    "iso2": "UG",
+    "iso3": "UGA",
+    "english": "Uganda",
+    "zh_cn": "乌干达"
+  },
+  {
+    "iso2": "UM",
+    "iso3": "UMI",
+    "english": "U.S. Outlying Islands",
+    "zh_cn": "美国本土外小岛屿"
+  },
+  {
+    "iso2": "US",
+    "iso3": "USA",
+    "english": "United States",
+    "zh_cn": "美国"
+  },
+  {
+    "iso2": "UY",
+    "iso3": "URY",
+    "english": "Uruguay",
+    "zh_cn": "乌拉圭"
+  },
+  {
+    "iso2": "UZ",
+    "iso3": "UZB",
+    "english": "Uzbekistan",
+    "zh_cn": "乌兹别克斯坦"
+  },
+  {
+    "iso2": "VA",
+    "iso3": "VAT",
+    "english": "Vatican City",
+    "zh_cn": "梵蒂冈"
+  },
+  {
+    "iso2": "VC",
+    "iso3": "VCT",
+    "english": "St. Vincent & Grenadines",
+    "zh_cn": "圣文森特和格林纳丁斯"
+  },
+  {
+    "iso2": "VE",
+    "iso3": "VEN",
+    "english": "Venezuela",
+    "zh_cn": "委内瑞拉"
+  },
+  {
+    "iso2": "VG",
+    "iso3": "VGB",
+    "english": "British Virgin Islands",
+    "zh_cn": "英属维尔京群岛"
+  },
+  {
+    "iso2": "VI",
+    "iso3": "VIR",
+    "english": "U.S. Virgin Islands",
+    "zh_cn": "美属维尔京群岛"
+  },
+  {
+    "iso2": "VN",
+    "iso3": "VNM",
+    "english": "Vietnam",
+    "zh_cn": "越南"
+  },
+  {
+    "iso2": "VU",
+    "iso3": "VUT",
+    "english": "Vanuatu",
+    "zh_cn": "瓦努阿图"
+  },
+  {
+    "iso2": "WF",
+    "iso3": "WLF",
+    "english": "Wallis & Futuna",
+    "zh_cn": "瓦利斯和富图纳"
+  },
+  {
+    "iso2": "WS",
+    "iso3": "WSM",
+    "english": "Samoa",
+    "zh_cn": "萨摩亚"
+  },
+  {
+    "iso2": "XK",
+    "iso3": "XKK",
+    "english": "Kosovo",
+    "zh_cn": "科索沃"
+  },
+  {
+    "iso2": "YE",
+    "iso3": "YEM",
+    "english": "Yemen",
+    "zh_cn": "也门"
+  },
+  {
+    "iso2": "YT",
+    "iso3": "MYT",
+    "english": "Mayotte",
+    "zh_cn": "马约特"
+  },
+  {
+    "iso2": "ZA",
+    "iso3": "ZAF",
+    "english": "South Africa",
+    "zh_cn": "南非"
+  },
+  {
+    "iso2": "ZM",
+    "iso3": "ZMB",
+    "english": "Zambia",
+    "zh_cn": "赞比亚"
+  },
+  {
+    "iso2": "ZW",
+    "iso3": "ZWE",
+    "english": "Zimbabwe",
+    "zh_cn": "津巴布韦"
+  }
+]

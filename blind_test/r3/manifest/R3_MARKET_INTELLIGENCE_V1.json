@@ -1,0 +1,13 @@
+{
+  "config_sha256": "c14f952befc1dde562c9818b22ad106d0ace63e1601f2b0480d2d100ea14e7e2",
+  "created_at": "2026-10-05T09:10:55.230702+00:00",
+  "fusion_version": "MODEL_MARKET_FUSION_V1",
+  "intelligence_sha256": "68e0806c639c013fc7e1395defec303ae1f88b5f00b5b45d6ed97a1a5d67ad90",
+  "lock_sha256": "4c7b31909cfd1c707009da5057ab52437fab5ba9f6ac30ecf90c701148dc9c54",
+  "mode": "BLIND_TEST_R3",
+  "production_ready": false,
+  "providers_sha256": "b932c2e8c375fbd6939c01f4de0bf0cf963f62bc2a5983cb0d7a34d1c22564eb",
+  "status": "FROZEN_PROVISIONAL",
+  "store_sha256": "44fe106282be3706cacfc5a54f9ae0d442d91c37067fc6cc03725605d5b29481",
+  "version": "R3_MARKET_INTELLIGENCE_V1"
+}

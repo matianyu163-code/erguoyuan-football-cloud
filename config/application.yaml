@@ -1,0 +1,11 @@
+app_version: 1.0.0
+mode: DEVELOPMENT_REVIEW_ONLY
+workspace: .workspace
+database: data/football.duckdb
+artifact_path: artifacts/phase9/meta_no_market/13a49d400f358e9e8ea69962c07e64db
+expected_artifact_config_hash: af417e2ae59c4c13766f50241def26657e44264d687780f4ceccab6f626539de
+development_predictions: reports/phase9_development_core_preview.jsonl
+competition_rules: config/competition_rules.yaml
+report_path: .workspace/app/reports
+log_path: .workspace/app/logs
+history_database: .workspace/app/history.duckdb

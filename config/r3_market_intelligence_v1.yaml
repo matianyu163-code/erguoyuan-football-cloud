@@ -1,0 +1,20 @@
+version: R3_MARKET_INTELLIGENCE_V1
+status: FROZEN_PROVISIONAL
+market_type: MATCH_1X2
+devig_method: MULTIPLICATIVE
+consensus_method: MEDIAN
+minimum_bookmakers: 1
+maximum_overround: 0.20
+maximum_quote_age_seconds: 86400
+divergence:
+  warning_pp: 7.5
+  severe_pp: 12.5
+fusion:
+  version: MODEL_MARKET_FUSION_V1
+  model_weight: 0.70
+  market_weight: 0.30
+  dynamic_weight_training: false
+provider_status:
+  JC_OFFICIAL_PROVIDER: NOT_CONFIGURED
+  GLOBAL_ODDS_PROVIDER: NOT_CONFIGURED
+  MANUAL_MARKET_PROVIDER: AVAILABLE_IF_USER_CONFIRMED_INPUT

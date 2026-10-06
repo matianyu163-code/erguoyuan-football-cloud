@@ -1,0 +1,25 @@
+# Independent priors and sampling controls for HISTORICAL_MARKET_BAYESIAN_POISSON_V1.
+model_id: HISTORICAL_MARKET_BAYESIAN_POISSON_V1
+model_version: 1.0.0
+max_goals: 12
+min_matches: 40
+min_team_matches: 3
+training_window: 1095
+time_decay: 0.001
+market_min_training_matches: 30
+market_prediction_horizon: CUSTOM
+market_attack_prior_sd: 0.45
+market_defence_prior_sd: 0.45
+market_global_log_rate_prior_sd: 0.7
+market_home_advantage_prior_mean: 0.12
+market_home_advantage_prior_sd: 0.35
+market_anchor_prior_mean: 0.0
+market_anchor_prior_sd: 0.5
+market_posterior_draws: 400
+market_seed: 314159
+market_optimizer_max_iterations: 3000
+market_reliability_bookmaker_scale: 3.0
+market_reliability_dispersion_scale: 5.0
+market_reliability_freshness_scale_seconds: 21600
+market_reliability_fit_error_scale: 0.12
+market_max_fit_error: 0.12

@@ -1,0 +1,29 @@
+provider_id: OPENLIGADB
+source_tier: 2
+source_type: STRUCTURED
+enabled: true
+base_url: https://api.openligadb.de
+league_shortcut: pl
+league_season: 2026
+history_seasons: [2025, 2024]
+competition_aliases: [EPL, 英超]
+competition_id: ENG_PL
+competition_name: Premier League
+# Reviewed league context for discovery; not fields supplied by team API rows.
+team_country: ENG
+team_federation: UEFA
+competition_gender: MEN
+competition_age_group: SENIOR
+competition_entity_type: CLUB
+competition_type: LEAGUE
+team_bindings:
+  ENG_ARS:
+    provider_team_id: 2617
+    provider_name: FC Arsenal
+  ENG_LIV:
+    provider_team_id: 370
+    provider_name: FC Liverpool
+license: ODbL-1.0
+license_url: https://openligadb.de/lizenz
+api_docs_url: https://api.openligadb.de/index.html
+usage_note: Community-maintained data; verify each fixture and respect the 60 requests/minute/IP limit.

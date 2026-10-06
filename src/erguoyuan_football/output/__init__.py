@@ -1,0 +1,1 @@
+"""Stable output contracts."""

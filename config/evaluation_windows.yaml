@@ -1,0 +1,14 @@
+version: PHASE8_2_LOCK_V1
+timezone: UTC
+mode: DATE_SAFE_BATCH
+meta_train:
+  start: 2022-08-01
+  end: 2025-06-30
+calibration_candidate:
+  start: 2025-08-01
+  end: 2026-06-30
+final_holdout:
+  start: 2026-08-01
+  end: 2027-06-30
+  status: LOCKED_UNTOUCHED_BY_PHASE8_2
+  reason: First season after the Phase 8.1 retrospective OOS evaluation window.

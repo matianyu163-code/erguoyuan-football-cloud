@@ -1,0 +1,48 @@
+provider_id: OPENLIGADB_GLOBAL_DIRECTORY
+source_tier: 2
+source_type: STRUCTURED
+enabled: true
+base_url: https://api.openligadb.de
+license: ODbL-1.0
+license_url: https://openligadb.de/lizenz
+documentation_url: https://api.openligadb.de/index.html
+usage_note: Community-maintained data; respect documented maximum of 60 requests per minute per IP.
+# Each shortcut and entity scope is reviewed configuration. Provider rows do not supply
+# gender, age, nationality, or squad level; these fields come from this profile.
+competitions:
+  germany_men_bundesliga_2026:
+    shortcut: bl1
+    season: 2026
+    competition_id: DEU_BL1_2026
+    competition_name: Bundesliga
+    country: GER
+    federation: UEFA
+    gender: MEN
+    age_group: SENIOR
+    entity_type: CLUB
+    squad_level: FIRST_TEAM
+    competition_type: LEAGUE
+  germany_men_second_division_2026:
+    shortcut: bl2
+    season: 2026
+    competition_id: DEU_BL2_2026
+    competition_name: 2. Bundesliga
+    country: GER
+    federation: UEFA
+    gender: MEN
+    age_group: SENIOR
+    entity_type: CLUB
+    squad_level: FIRST_TEAM
+    competition_type: LEAGUE
+  germany_women_top_division_2026:
+    shortcut: ffb1
+    season: 2026
+    competition_id: DEU_FRAUEN_BUNDESLIGA_2026
+    competition_name: Frauen-Bundesliga
+    country: GER
+    federation: UEFA
+    gender: WOMEN
+    age_group: SENIOR
+    entity_type: CLUB
+    squad_level: FIRST_TEAM
+    competition_type: LEAGUE

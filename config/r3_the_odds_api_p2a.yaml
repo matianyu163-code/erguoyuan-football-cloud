@@ -1,0 +1,22 @@
+version: R3_THE_ODDS_API_P2A_V1
+provider_name: THE_ODDS_API_V4
+category: GLOBAL_ODDS_PROVIDER
+enabled: true
+api_key_env: YYCORE_THE_ODDS_API_KEY
+base_url: https://api.the-odds-api.com/v4
+regions: [eu, uk]
+market: h2h
+odds_format: decimal
+date_format: iso
+timeout_seconds: 15
+catalog_cache_seconds: 21600
+odds_cache_seconds: 60
+quota_warning_threshold: 10
+maximum_overround: 0.20
+maximum_market_age_seconds: 1800
+minimum_decimal_odds: 1.01
+fixture_match:
+  kickoff_tolerance_minutes: 180
+  normalized_exact_tolerance_minutes: 15
+  require_home_away_orientation: true
+  ambiguous_match_reject: true

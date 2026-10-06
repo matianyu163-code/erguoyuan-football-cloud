@@ -1,0 +1,1 @@
+"""Source acceptance policy."""

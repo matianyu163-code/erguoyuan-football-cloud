@@ -1,0 +1,18 @@
+version: PHASE11_V1
+development_only: true
+required_ev: 0.03
+max_quote_age_minutes: 120
+ev_policy_status: DEVELOPMENT_POLICY
+score_matrix_selection:
+  evaluation_start: 2026-01-01
+  evaluation_end_exclusive: 2026-05-01
+  target_start: 2026-05-01
+final_holdout:
+  start: 2026-08-01
+  end: 2027-06-30
+  status: LOCKED_UNTOUCHED
+accounts:
+  high_hit_cap_rmb: 400
+  value_cap_rmb: 100
+  longshot_cap_rmb: 20
+production_status: NOT_PROMOTED

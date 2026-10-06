@@ -1,0 +1,22 @@
+{
+  "slate_date": "2026-10-06",
+  "source": "USER_AUTHORITATIVE",
+  "fixtures": [
+    {
+      "jc_match_number": "周二005",
+      "competition": "UEFA Nations League",
+      "home_team": "卢森堡",
+      "away_team": "保加利亚",
+      "kickoff": "2026-10-07T02:45:00+08:00",
+      "neutral_venue": false,
+      "spf": {"home": 1.85, "draw": 3.10, "away": 3.75},
+      "rqspf": {"handicap": -1, "home": 3.95, "draw": 3.35, "away": 1.73},
+      "screenshot_path": "inputs/daily_market/evidence/2026-10-06_luxembourg_bulgaria.jpg",
+      "metadata_sources": {
+        "teams_and_odds": "USER_SCREENSHOT_2026-10-06",
+        "jc_match_number_and_kickoff": "PREMATCH_SAVED_JC_RENDERED_SCHEDULE_2026-10-05",
+        "competition_and_venue": "UEFA_NATIONS_LEAGUE_PREMATCH_FIXTURE_INFORMATION"
+      }
+    }
+  ]
+}

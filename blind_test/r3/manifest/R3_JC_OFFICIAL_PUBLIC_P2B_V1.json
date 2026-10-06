@@ -1,0 +1,20 @@
+{
+  "config_sha256": "b7205647c67a1be85f34e204089c8aac778e660c15e7ef13959df707fff5bb9e",
+  "created_at": "2026-10-05T10:57:00.195148+00:00",
+  "fusion_config_sha256": "c14f952befc1dde562c9818b22ad106d0ace63e1601f2b0480d2d100ea14e7e2",
+  "internal_api_used": false,
+  "jc_public_fetcher_sha256": "e736162776e96fc7bb4c1f94c5b9e64a91b0a074a87eadf708cec2d910f7412f",
+  "jc_public_import_sha256": "c2c7ff1dba26bd0a2f9fe344217862edb2599f4e28ae8b75b8712db92c9b64ba",
+  "jc_public_intelligence_sha256": "33ade04a177bd0ace1ae26efc434f58d66b8370447aaf4ffa35de85689a37ff2",
+  "jc_public_lock_sha256": "8b526d8bcc94c3d923112310b6dac31847e7c424650f0b74bacd8fcf93fc780b",
+  "jc_public_parser_sha256": "3833d3d47b5b32aded9f8ec320bb687d7921ae1af4ffa6a8c931a740e620fc04",
+  "jc_public_store_sha256": "e895869232168e0e66270a7b01b730d45854dc1e0e952104e952ec71f221e861",
+  "mode": "BLIND_TEST_R3",
+  "model_snapshot_id": "R3-6b3be79a95e62113a7566e20d21d645d",
+  "production_ready": false,
+  "provider": "JC_OFFICIAL_PUBLIC_PROVIDER",
+  "schema_sha256": "21fbc3d59b539454274d63e3b59f4ef913f38d8f0fcce876d17249b0ed06c253",
+  "source_quality": "OFFICIAL_PUBLIC_PAGE",
+  "status": "FROZEN_PROVISIONAL",
+  "version": "R3_JC_OFFICIAL_PUBLIC_P2B_V1"
+}

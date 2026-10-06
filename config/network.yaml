@@ -1,0 +1,6 @@
+production:
+  network_policy: ENHANCED_ONLY
+  international_connectivity_required: true
+  prediction_requires_external_gate: true
+  offline_test_mode: false
+sources: []

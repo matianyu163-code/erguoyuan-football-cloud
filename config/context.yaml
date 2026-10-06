@@ -1,0 +1,19 @@
+version: PHASE10_CONTEXT_V1.1
+development_window:
+  start: 2022-08-01
+  end: 2026-06-30
+final_holdout:
+  start: 2026-08-01
+  end: 2027-06-30
+  status: LOCKED_UNTOUCHED
+rules: config/competition_rules.yaml
+base_predictions: reports/phase9_development_core_preview.jsonl
+context_adjustment:
+  model_id: CONTEXT_RESIDUAL_V1
+  model_version: NOT_TRAINED_INSUFFICIENT_PIT_CONTEXT
+  enabled: false
+lineup_adjustment:
+  model_id: LINEUP_STRENGTH_V1
+  model_version: NOT_TRAINED
+  enabled: false
+production_status: NOT_PROMOTED

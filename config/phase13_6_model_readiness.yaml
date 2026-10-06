@@ -1,0 +1,43 @@
+# Production ModelConfig defaults: min_matches=40, min_team_matches=3.
+# min_training_team_matches is the minimum count of distinct, resolved teams
+# in the model's PIT training corpus (not a per-team appearance floor).
+# Model-specific entries are explicit. These do not lower or change model fit configs.
+core_model_groups:
+  BASE_STRENGTH: [ELO_V1, PI_RATING_V1, CORE_SPI_LIKE_V1]
+  GOAL_MODEL: [DIXON_COLES_V1, BIVARIATE_POISSON_V1, BAYESIAN_HIERARCHICAL_V1, DYNAMIC_BAYESIAN_POISSON_V1]
+  MARKET: [HISTORICAL_MARKET_BAYESIAN_POISSON_V1]
+  ML: [CORE_XGBOOST_V1, CORE_CATBOOST_V1]
+  CONTEXT: []
+required_core_groups: [BASE_STRENGTH, GOAL_MODEL]
+min_ready_core_groups: 1
+models:
+  DIXON_COLES_V1: {min_total: 40, min_direct_each: 3, min_competition: 0, prior_allowed: false, allow_multi_competition: true}
+  BIVARIATE_POISSON_V1: {min_total: 40, min_direct_each: 3, min_competition: 0, prior_allowed: false, allow_multi_competition: true}
+  # Direct team matches fit the model; separate same-competition observations
+  # define a capped league prior and are never added to the direct fit rows.
+  BAYESIAN_HIERARCHICAL_V1: {min_total: 5, min_direct_each: 3, min_competition: 20, prior_allowed: false, preferred_direct_each: 10, training_min_matches: 5, min_training_team_matches: 1}
+  # Rating models need chronological league history and a fitted three-way mapper;
+  # a 12-row floor is an explicit model-specific engineering minimum, not a
+  # universal target-match history threshold.
+  ELO_V1: {min_total: 12, min_direct_each: 0, min_competition: 0, prior_allowed: false, require_three_outcomes: true, preferred_direct_each: 10, training_min_matches: 12, allow_multi_competition: true}
+  PI_RATING_V1: {min_total: 12, min_direct_each: 0, min_competition: 0, prior_allowed: false, require_three_outcomes: true, preferred_direct_each: 10, training_min_matches: 12, allow_multi_competition: true}
+  DYNAMIC_BAYESIAN_POISSON_V1: {min_total: 20, min_direct_each: 0, min_competition: 20, prior_allowed: false, preferred_direct_each: 10, training_min_matches: 20}
+  CORE_SPI_LIKE_V1: {min_total: 40, min_direct_each: 3, min_competition: 0, prior_allowed: false, allow_multi_competition: true}
+  CORE_OPTA_XG_ELO_LIKE_V1: {min_total: 40, min_direct_each: 3, min_competition: 0, prior_allowed: false, allow_multi_competition: true, require_three_outcomes: true, require_xg_for_named_mode: true}
+  HISTORICAL_MARKET_BAYESIAN_POISSON_V1: {min_total: 40, min_direct_each: 3, min_competition: 0, prior_allowed: false, require_current_odds: true}
+  CORE_XGBOOST_V1: {min_total: 0, min_direct_each: 0, min_competition: 0, prior_allowed: false, require_artifact: true}
+  CORE_CATBOOST_V1: {min_total: 0, min_direct_each: 0, min_competition: 0, prior_allowed: false, require_artifact: true}
+training_requirements:
+  DIXON_COLES_V1: {min_training_rows: 40, sample_levels: [DIRECT, COMPETITION]}
+  BIVARIATE_POISSON_V1: {min_training_rows: 40, sample_levels: [DIRECT, COMPETITION]}
+  BAYESIAN_HIERARCHICAL_V1: {min_training_rows: 5, sample_levels: [DIRECT]}
+  ELO_V1: {min_training_rows: 12, sample_levels: [DIRECT, COMPETITION]}
+  PI_RATING_V1: {min_training_rows: 12, sample_levels: [DIRECT, COMPETITION]}
+  DYNAMIC_BAYESIAN_POISSON_V1: {min_training_rows: 20, sample_levels: [DIRECT, COMPETITION]}
+  CORE_SPI_LIKE_V1: {min_training_rows: 40, sample_levels: [DIRECT, COMPETITION]}
+  CORE_OPTA_XG_ELO_LIKE_V1: {min_training_rows: 40, sample_levels: [DIRECT, COMPETITION]}
+  HISTORICAL_MARKET_BAYESIAN_POISSON_V1: {min_training_rows: 40, sample_levels: [DIRECT, COMPETITION]}
+  CORE_XGBOOST_V1: {min_training_rows: 0, sample_levels: []}
+  CORE_CATBOOST_V1: {min_training_rows: 0, sample_levels: []}
+inference_requirements:
+  BAYESIAN_HIERARCHICAL_V1: {supports_prior: true, min_prior_samples: 8}

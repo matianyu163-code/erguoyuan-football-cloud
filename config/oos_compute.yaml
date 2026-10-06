@@ -1,0 +1,13 @@
+version: PHASE8_2_COMPUTE_V1
+max_threads: 4
+bayesian_refit_frequency: quarterly
+ml_refit_frequency: quarterly
+goal_model_refit_frequency: monthly
+batch_size: 100
+checkpoint_frequency: 1
+minimum_history_matches: 80
+minimum_team_history: 3
+training_window_days: 1095
+ml_min_train_rows: 300
+ml_validation_rows: 150
+ml_min_test_rows: 100

@@ -1,0 +1,38 @@
+phase: "10"
+name: TOURNAMENT_STATE_LINEUP_CONTEXT_ENGINE
+status: COMPLETE_WITH_EXTERNAL_CONTEXT_BLOCKERS
+pipeline_version: PHASE10_CONTEXT_V1.1
+production_status: NOT_PROMOTED
+temporal_mode: DATE_SAFE_BATCH
+final_holdout_status: LOCKED_UNTOUCHED
+public_interfaces:
+  - CompetitionRuleRegistry
+  - StandingsReconstructor
+  - TournamentStateBuilder
+  - ScheduleContextBuilder
+  - LineupEvidenceLayer
+  - InjuryEvidenceLayer
+  - PlayerStrengthProvider
+  - RotationRiskEngine
+  - ContextFeatureBuilder
+  - ContextAdjustmentEngine
+  - ContextPipeline
+  - ContextStore
+  - run_phase10 CLI
+blocked_evidence:
+  - HISTORICAL_RULE_PUBLICATION_SNAPSHOTS
+  - COMPLETE_CROSS_COMPETITION_SCHEDULE
+  - LICENSED_HISTORICAL_LINEUPS
+  - LICENSED_HISTORICAL_INJURIES
+  - PLAYER_STRENGTH_ARTIFACT
+  - CHRONOLOGICAL_CONTEXT_RESIDUAL_ARTIFACT
+critical_tests:
+  - tests/phase10
+  - tests/unit/test_v51.py
+  - tests/pit
+  - tests/phase9
+  - tests/phase9_1
+protected_interfaces:
+  - Phase 9 META and calibration artifacts
+  - Phase 9 locked final holdout
+  - V5.1 output contract

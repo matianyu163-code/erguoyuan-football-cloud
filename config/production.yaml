@@ -1,0 +1,13 @@
+mode: TRIAL
+features:
+  enable_live_data: true
+  enable_official_fixture_research: true
+  enable_prediction: true
+  enable_record: true
+  enable_update: true
+safety:
+  auto_bet: false
+  auto_publish: false
+storage:
+  trial_record_database: data/trial_prediction_records.sqlite
+  update_history: data/update_history.json

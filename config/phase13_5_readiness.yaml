@@ -1,0 +1,12 @@
+min_recent_form_matches: 3
+core_strength_models:
+  - DIXON_COLES_V1
+  - BIVARIATE_POISSON_V1
+  - BAYESIAN_HIERARCHICAL_V1
+  - ELO_V1
+  - PI_RATING_V1
+  - DYNAMIC_BAYESIAN_POISSON_V1
+required_for_ready:
+  - FIXTURE
+  - HISTORICAL_RESULTS
+degraded_when_optional_missing: true

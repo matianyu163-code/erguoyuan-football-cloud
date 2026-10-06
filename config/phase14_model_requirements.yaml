@@ -1,0 +1,63 @@
+schema_version: MODEL_REQUIREMENTS_V1
+input_schema_version: MODEL_INPUT_BUNDLE_V1
+sample_hierarchy_version: SAMPLE_HIERARCHY_V1
+# Readiness is required for fit; inference requirements apply even with a valid artifact.
+# Existing model fit thresholds remain in config/phase13_6_model_readiness.yaml and ModelConfig.
+models:
+  DIXON_COLES_V1:
+    training_inputs: [HISTORICAL_RESULTS]
+    inference_inputs: [FIXTURE]
+    prior_support: DIRECT_PLUS_COMPETITION
+    sample_levels: [DIRECT, COMPETITION]
+  BIVARIATE_POISSON_V1:
+    training_inputs: [HISTORICAL_RESULTS]
+    inference_inputs: [FIXTURE]
+    prior_support: DIRECT_PLUS_COMPETITION
+    sample_levels: [DIRECT, COMPETITION]
+  BAYESIAN_HIERARCHICAL_V1:
+    training_inputs: [HISTORICAL_RESULTS]
+    inference_inputs: [FIXTURE]
+    prior_support: DIRECT_PLUS_COMPETITION
+    sample_levels: [DIRECT, COMPETITION]
+  ELO_V1:
+    training_inputs: [HISTORICAL_RESULTS, THREE_WAY_MAPPER_TRAINING]
+    inference_inputs: [FIXTURE]
+    prior_support: DIRECT_PLUS_COMPETITION
+    sample_levels: [DIRECT, COMPETITION]
+  PI_RATING_V1:
+    training_inputs: [HISTORICAL_RESULTS, THREE_WAY_MAPPER_TRAINING]
+    inference_inputs: [FIXTURE]
+    prior_support: DIRECT_PLUS_COMPETITION
+    sample_levels: [DIRECT, COMPETITION]
+  DYNAMIC_BAYESIAN_POISSON_V1:
+    training_inputs: [HISTORICAL_RESULTS, MATCH_TIMESTAMPS]
+    inference_inputs: [FIXTURE]
+    prior_support: DIRECT_PLUS_COMPETITION
+    sample_levels: [DIRECT, COMPETITION]
+  CORE_SPI_LIKE_V1:
+    training_inputs: [HISTORICAL_RESULTS]
+    inference_inputs: [FIXTURE]
+    prior_support: DIRECT_PLUS_COMPETITION
+    sample_levels: [DIRECT, COMPETITION]
+  CORE_OPTA_XG_ELO_LIKE_V1:
+    training_inputs: [HISTORICAL_RESULTS, XG, XGA]
+    inference_inputs: [FIXTURE, XG, XGA]
+    prior_support: FEATURE_BASED
+    sample_levels: [DIRECT, COMPETITION]
+  HISTORICAL_MARKET_BAYESIAN_POISSON_V1:
+    training_inputs: [HISTORICAL_RESULTS, ODDS]
+    inference_inputs: [FIXTURE, ODDS]
+    prior_support: MARKET_ONLY
+    sample_levels: [DIRECT, COMPETITION]
+  CORE_XGBOOST_V1:
+    training_inputs: [ML_ARTIFACT]
+    inference_inputs: [FIXTURE, ML_ARTIFACT, ML_FEATURE_VECTOR]
+    prior_support: FEATURE_BASED
+    sample_levels: []
+    requires_artifact: true
+  CORE_CATBOOST_V1:
+    training_inputs: [ML_ARTIFACT]
+    inference_inputs: [FIXTURE, ML_ARTIFACT, ML_FEATURE_VECTOR]
+    prior_support: FEATURE_BASED
+    sample_levels: []
+    requires_artifact: true

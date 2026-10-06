@@ -1,0 +1,6 @@
+version: PHASE9_1_PERFORMANCE_V1
+equivalence_tolerance: 0.000000000001
+benchmark_repeats: 3
+benchmark_warmups: 1
+daily_batch_size_min: 10
+daily_batch_size_max: 30

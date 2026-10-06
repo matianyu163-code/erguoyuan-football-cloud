@@ -1,0 +1,23 @@
+version: PHASE9_NO_MARKET_DEV_V1
+candidate_dataset_id: 10cec92f96327bfb9d2fe0d3f0782ac5
+candidate_data_hash: 10cec92f96327bfb9d2fe0d3f0782ac5aa884c14419642c127a479786ccec470
+candidate_part_hashes:
+  features: 2a1914818eaf9d7558df2e8dfaeb4e2c9f015e7a0e5532956e356be594021271
+  labels: 8534a2bba05c5b2cb9a6206ee36113ec66022b1457b04792703f32e5fb19c659
+  lineage: 99fc6cdf0363807184b79cabab74d32dc0c80909faf8cb48ab3c5b808945a425
+temporal_mode: DATE_SAFE_BATCH
+model_id: META_NO_MARKET_V1
+regularization_c: 1.0
+log_ratio_epsilon: 0.000001
+feature_schema_version: META_LOG_RATIO_MASK_V1
+dependency_schema_version: META_DEPENDENCY_V1
+min_available_models: 3
+common_era_min_available_models: 8
+max_coverage_train: [2022-08-01, 2025-12-31]
+common_model_era_train: [2025-10-01, 2025-12-31]
+meta_dev_validation: [2026-01-01, 2026-02-28]
+calibration_fit: [2026-03-01, 2026-04-30]
+calibration_dev_eval: [2026-05-01, 2026-05-31]
+final_holdout: [2026-08-01, 2027-06-30]
+final_holdout_status: LOCKED_UNTOUCHED
+production_compatibility: RESEARCH_ONLY_NOT_LIVE_VALIDATED

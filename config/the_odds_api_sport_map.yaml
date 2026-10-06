@@ -1,0 +1,9 @@
+version: THE_ODDS_API_SPORT_MAP_V1
+mappings: {}
+candidates:
+  - competition: 欧国联
+    aliases: [UEFA Nations League]
+    sport_key: soccer_uefa_nations_league
+    required_catalog_title: UEFA Nations League
+    source: THE_ODDS_API_SPORTS_DOCUMENTATION
+    verified: false

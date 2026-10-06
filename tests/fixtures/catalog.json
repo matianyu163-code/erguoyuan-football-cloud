@@ -1,0 +1,21 @@
+{
+  "source": "SYNTHETIC_TEST",
+  "teams": [
+    {"team_id": "test_arsenal", "team_name": "阿森纳", "aliases": ["阿森纳", "Arsenal"]},
+    {"team_id": "test_chelsea", "team_name": "切尔西", "aliases": ["切尔西", "Chelsea"]},
+    {"team_id": "test_madrid", "team_name": "皇家马德里", "aliases": ["皇家马德里", "皇马", "Real Madrid"]},
+    {"team_id": "test_barcelona", "team_name": "巴塞罗那", "aliases": ["巴塞罗那", "巴萨", "Barcelona"]},
+    {"team_id": "test_milan", "team_name": "AC米兰", "aliases": ["AC米兰", "AC Milan"]},
+    {"team_id": "test_inter", "team_name": "国际米兰", "aliases": ["国际米兰", "Inter Milan"]},
+    {"team_id": "test_united", "team_name": "曼联", "aliases": ["曼联", "Manchester United", "Man United", "Man Utd"]}
+  ],
+  "competitions": [
+    {"competition_id": "test_epl", "competition_name": "英超", "aliases": ["Premier League", "英超"]},
+    {"competition_id": "test_ucl", "competition_name": "欧冠", "aliases": ["Champions League", "欧冠", "UEFA Champions League"]}
+  ],
+  "fixtures": [
+    {"match_id": "test_match_1", "lottery_match_no": "周二001", "competition_id": "test_epl", "home_team_id": "test_arsenal", "away_team_id": "test_chelsea"},
+    {"match_id": "test_match_2", "lottery_match_no": "周二002", "competition_id": "test_ucl", "home_team_id": "test_madrid", "away_team_id": "test_barcelona"},
+    {"match_id": "test_match_3", "lottery_match_no": "周二003", "competition_id": "test_ucl", "home_team_id": "test_milan", "away_team_id": "test_inter"}
+  ]
+}

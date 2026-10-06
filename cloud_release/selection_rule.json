@@ -1,0 +1,23 @@
+{
+  "engine_version": "R3_SELECTION_ENGINE_V1",
+  "mode": "BLIND_TEST_R3",
+  "status": "FROZEN",
+  "source_sha256": "f69bf35107274569498f272b5a7ad0591934a5f7689614140093183d9b433944",
+  "input": "VERIFIED_LOCKED_PREDICTIONS_SAME_DATE_AND_MODEL_SNAPSHOT",
+  "model_fit": false,
+  "probability_modification": false,
+  "market_required": false,
+  "rules": {
+    "one_x_two_pair": "Choose the two distinct fixtures with maximum product of 1X2 Top1 probabilities.",
+    "handicap_pair": "Choose the two distinct eligible fixtures with maximum product of handicap Top1 probabilities.",
+    "total_goals_duplex": "Choose the fixture with maximum sum of the two recorded total-goal Top2 probabilities.",
+    "score_pair_duplex": "Choose the two distinct fixtures with maximum product of their recorded score Top2 coverage; enumerate all four score combinations with probability products.",
+    "joint_probability": "Product of probabilities from distinct fixtures; theoretical independence assumption, not calibrated joint model.",
+    "ties": "Ascending fixture_id; for 100 plan ascending fixture_id tuple in category order.",
+    "standard_400": "For AVAILABLE 1X2 pair, handicap pair, total-goals duplex and score-pair duplex, distribute 200 two-yuan units proportional to their theoretical success probabilities, using largest remainders and lexicographic component tie-breaks. Excluded HTFT share is redistributed by renormalizing across available components. Split total and score component stakes among tickets proportional to their recorded outcome probabilities with the same two-yuan rule.",
+    "free_100": "Choose one 1X2 Top1, one handicap Top1 and one total-goals Top2 duplex on three distinct fixtures maximizing the sum of success probabilities; rank by probability, then fixture_id and category. Allocate 50, 30 and 20 yuan respectively. Split total-goals stake across its two outcomes proportional to outcome probabilities in two-yuan units.",
+    "stability_and_consistency": "No repeated frozen predictions or second national model are available. Temporal stability and cross-model consistency are UNAVAILABLE and are not invented or scored. Three distinct fixtures and categories provide deterministic diversification.",
+    "half_full_time": "UNAVAILABLE until a frozen HTFT model produces probabilities.",
+    "high_odds_20": "UNAVAILABLE while MARKET_VERIFIED is FALSE. No screenshot odds are used for EV or ROI."
+  }
+}

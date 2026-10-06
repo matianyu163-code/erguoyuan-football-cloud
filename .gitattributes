@@ -1,0 +1,8 @@
+* text=auto eol=lf
+*.joblib -text
+*.jpg -text
+*.jpeg -text
+*.png -text
+*.sqlite -text
+src/erguoyuan_football/knowledge/entities/country_aliases.json -text
+tests/reference/GOLDEN_REFERENCE_001.json -text

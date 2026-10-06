@@ -1,0 +1,36 @@
+development:
+  params:
+    objective: multi:softprob
+    eval_metric: mlogloss
+    tree_method: hist
+    n_estimators: 40
+    learning_rate: 0.08
+    max_depth: 3
+    min_child_weight: 2
+    subsample: 0.85
+    colsample_bytree: 0.85
+    reg_alpha: 0.0
+    reg_lambda: 2.0
+    random_state: 314159
+    n_jobs: 2
+  early_stopping_rounds: 8
+  max_trials: 3
+  min_train_rows: 24
+production:
+  params:
+    objective: multi:softprob
+    eval_metric: mlogloss
+    tree_method: hist
+    n_estimators: 600
+    learning_rate: 0.03
+    max_depth: 4
+    min_child_weight: 5
+    subsample: 0.8
+    colsample_bytree: 0.8
+    reg_alpha: 0.1
+    reg_lambda: 3.0
+    random_state: 314159
+    n_jobs: 4
+  early_stopping_rounds: 35
+  max_trials: 6
+  min_train_rows: 200

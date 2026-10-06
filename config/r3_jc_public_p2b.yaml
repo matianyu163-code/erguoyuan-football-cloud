@@ -1,0 +1,23 @@
+version: R3_JC_OFFICIAL_PUBLIC_P2B_V1
+status: FROZEN_PROVISIONAL
+provider_name: JC_OFFICIAL_PUBLIC_PROVIDER
+source_type: JC_OFFICIAL_PUBLIC
+source_quality: OFFICIAL_PUBLIC_PAGE
+base_url: https://www.sporttery.cn
+pages:
+  schedule: https://www.sporttery.cn/jc/zqszsc/index.html
+  spf: https://www.sporttery.cn/jc/jsq/zqspf/index.html
+  score: https://www.sporttery.cn/jc/jsq/zqbf/
+  goals: https://www.sporttery.cn/jc/jsq/zqzjq/
+  htft: https://www.sporttery.cn/jc/jsq/zqbqc/
+cache_ttl_seconds: 60
+stale_after_seconds: 600
+maximum_overround: 0.20
+fixture_match:
+  kickoff_tolerance_minutes: 15
+  require_orientation: true
+  ambiguous_reject: true
+fusion:
+  primary_market_source: JC
+  version: MODEL_MARKET_FUSION_V1
+parser_version: JC_PUBLIC_PARSER_V1

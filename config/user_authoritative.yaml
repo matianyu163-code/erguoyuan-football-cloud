@@ -1,0 +1,8 @@
+input_policy:
+  user_fixture_authoritative: true
+  user_market_authoritative: true
+  require_fixture_reverification: false
+  require_market_reverification: false
+  require_second_confirmation: false
+external_research_mode: OPTIONAL_ENRICHMENT
+web_scraping: PAUSED

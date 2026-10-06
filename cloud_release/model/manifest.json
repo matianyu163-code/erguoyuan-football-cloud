@@ -1,0 +1,27 @@
+{
+  "artifact_path": "cloud_release/model",
+  "code_version": "UNVERSIONED_SOURCE_TREE",
+  "config_hash": "d5d3db2d75b9bf7cf47a2343729b78fb1de01eb771653dd70749af18c23c5495",
+  "created_at": "2026-10-05T06:35:03.762327Z",
+  "dependencies": {
+    "duckdb": "1.5.6",
+    "httpx": "0.28.1",
+    "joblib": "1.6.0",
+    "numpy": "2.3.5",
+    "pandas": "3.0.6",
+    "penaltyblog": "1.12.2",
+    "pydantic": "2.13.5",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.17.1"
+  },
+  "model_id": "DIXON_COLES_V1",
+  "model_version": "1.0.0",
+  "payload_sha256": "f9c611df00b049354d8fefd05f079332a3652f575fdbbcc1df8162c41c0ff959",
+  "posterior_method": null,
+  "sampling_diagnostics": {},
+  "state_history_count": null,
+  "state_process": null,
+  "time_index_version": null,
+  "trained_until": "2026-10-05T06:18:45.401196Z",
+  "training_data_hash": "457c550e0bcc547056bafcc3c9c578f7af6dddc663551b70ad3c5102edeac3a7"
+}

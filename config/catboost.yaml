@@ -1,0 +1,30 @@
+development:
+  params:
+    loss_function: MultiClass
+    eval_metric: MultiClass
+    iterations: 40
+    learning_rate: 0.08
+    depth: 4
+    l2_leaf_reg: 4.0
+    random_seed: 314159
+    thread_count: 2
+    allow_writing_files: false
+    verbose: false
+  early_stopping_rounds: 8
+  max_trials: 3
+  min_train_rows: 24
+production:
+  params:
+    loss_function: MultiClass
+    eval_metric: MultiClass
+    iterations: 700
+    learning_rate: 0.03
+    depth: 5
+    l2_leaf_reg: 5.0
+    random_seed: 314159
+    thread_count: 4
+    allow_writing_files: false
+    verbose: false
+  early_stopping_rounds: 40
+  max_trials: 6
+  min_train_rows: 200

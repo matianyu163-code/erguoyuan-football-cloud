@@ -1,0 +1,16 @@
+{
+  "release_version": "R3_OFFICIAL_PUBLISH_V1",
+  "mode": "BLIND_TEST_R3",
+  "publish_level": "FROZEN_BLIND_TEST",
+  "result_status": "OFFICIAL_BLIND_TEST",
+  "model_snapshot_id": "R3-6b3be79a95e62113a7566e20d21d645d",
+  "registered_models": ["DIXON_COLES_V1@1.0.0"],
+  "selection_engine_version": "R3_SELECTION_ENGINE_V1",
+  "publisher_source_sha256": "03fea7714d80818c3e3d69c39b31ea5917fe5845fc05bf4ebae6f88d5d374a69",
+  "capability_source_sha256": "e4071478dd4a3902a1211dfe1c76f0d5b960982c45dcc4f31664e44d07ce16dd",
+  "production_gate_source_sha256": "3d1cdd7bb169c8567d680a296a7962d695a10ae4de3cda27677f331d647209e7",
+  "production_eligible": false,
+  "r3_production_signal": false,
+  "market_verified": false,
+  "publication_scope": "Append-only official blind-test output; never Production betting publication."
+}
