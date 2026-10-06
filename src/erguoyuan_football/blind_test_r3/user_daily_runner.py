@@ -176,6 +176,7 @@ def run_daily(input_path: Path, *, root: Path = ROOT,
         except (ValueError, TypeError, KeyError, RuntimeError) as error:
             model_status = f"UNAVAILABLE:{type(error).__name__}:{error}"
         market_spf = market["no_vig"]["SPF"]
+        market_rqspf = market["no_vig"]["RQSPF"]
         if standard is not None:
             probabilities = standard["one_x_two"]["probabilities"]
             fusion = fuse_model_market(probabilities, market_spf, config)
@@ -185,10 +186,22 @@ def run_daily(input_path: Path, *, root: Path = ROOT,
             divergence = ("SEVERE" if max_edge >= config["divergence"]["severe_pp"]
                           else "WARNING" if max_edge >= config["divergence"]["warning_pp"]
                           else "NORMAL")
+            handicap_probabilities = standard["handicap_one_x_two"]["probabilities"]
+            handicap_fusion = fuse_model_market(handicap_probabilities, market_rqspf, config)
+            handicap_edge = {key: (handicap_probabilities[key] - market_rqspf[key]) * 100
+                             for key in handicap_probabilities}
+            handicap_max_edge = max(abs(value) for value in handicap_edge.values())
+            handicap_divergence = (
+                "SEVERE" if handicap_max_edge >= config["divergence"]["severe_pp"]
+                else "WARNING" if handicap_max_edge >= config["divergence"]["warning_pp"]
+                else "NORMAL")
         else:
             fusion = {"status": "UNAVAILABLE", "reason": "MODEL_UNAVAILABLE"}
+            handicap_fusion = {"status": "UNAVAILABLE", "reason": "MODEL_UNAVAILABLE"}
             edge = None
+            handicap_edge = None
             divergence = "UNAVAILABLE"
+            handicap_divergence = "UNAVAILABLE"
         payload = {"mode": "FROZEN_BLIND_TEST", "slate_date": slate.slate_date.isoformat(),
             "fixture_id": fixture_id, "jc_match_number": item.jc_match_number,
             "competition": item.competition, "home_team": item.home_team,
@@ -206,14 +219,20 @@ def run_daily(input_path: Path, *, root: Path = ROOT,
             "r5": {"SPF": r5_market_only(market_spf),
                    "RQSPF": r5_market_only(market["no_vig"]["RQSPF"])},
             "edge_pp": edge, "divergence": divergence,
-            "fusion": fusion, "global_market": {"status": "UNAVAILABLE"},
+            "handicap_edge_pp": handicap_edge,
+            "handicap_divergence": handicap_divergence,
+            "fusion": fusion, "handicap_fusion": handicap_fusion,
+            "global_market": {"status": "UNAVAILABLE"},
             "external_research": {"status": "OPTIONAL_NOT_REQUESTED"}}
         prediction_id, lock_id = _save_prediction(state, payload)
         row = {"fixture_id": fixture_id, "jc_match_number": item.jc_match_number,
                "market_snapshot_id": market["market_snapshot_id"],
                "prediction_id": prediction_id, "lock_id": lock_id,
                "model_status": model_status, "r3": payload["r3"], "r5": payload["r5"],
-               "edge_pp": edge, "divergence": divergence, "fusion": fusion}
+               "edge_pp": edge, "divergence": divergence, "fusion": fusion,
+               "handicap_edge_pp": handicap_edge,
+               "handicap_divergence": handicap_divergence,
+               "handicap_fusion": handicap_fusion}
         rows.append(row)
         if raw is not None and standard is not None:
             selectable.append({"prediction_id": prediction_id, "fixture_id": fixture_id,

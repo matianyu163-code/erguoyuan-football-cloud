@@ -68,6 +68,8 @@ def test_frozen_artifact_load_and_no_runtime_fit(monkeypatch: pytest.MonkeyPatch
     assert row["r3"]["one_x_two"]["probabilities"]["HOME"] > 0
     assert row["r5"]["SPF"]["probabilities"]["HOME"] > 0
     assert row["fusion"]["model_weight"] == 0.7
+    assert row["handicap_fusion"]["model_weight"] == 0.7
+    assert abs(sum(row["handicap_fusion"]["probabilities"].values()) - 1) < 1e-9
     assert (tmp_path / "state/locks" / f"{row['lock_id']}.json").exists()
     prediction = (tmp_path / "state/predictions" / f"{row['prediction_id']}.json").read_bytes()
     lock = json.loads((tmp_path / "state/locks" / f"{row['lock_id']}.json")

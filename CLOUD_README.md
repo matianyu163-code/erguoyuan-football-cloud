@@ -31,7 +31,7 @@ For repeated or erroneous submissions, records remain append only. Corrections
 must be separate events; existing locks must not be edited.
 
 Model and market probabilities are separate. `MODEL_MARKET_FUSION_V1` uses fixed
-70% model / 30% user JC no-vig for available 1X2 probabilities. This is a
+70% model / 30% user JC no-vig for available SPF and RQSPF probabilities. This is a
 blind-test output, not a Production approval or an EV-validated bet.
 
 `GOLDEN_REFERENCE_001` replays one frozen pre-match example without writing to
