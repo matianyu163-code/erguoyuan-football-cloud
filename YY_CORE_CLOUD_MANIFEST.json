@@ -1,0 +1,38 @@
+{
+  "build": "CLOUD_CLEAN_BUILD_V1",
+  "cloud_ready": true,
+  "fusion_version": "MODEL_MARKET_FUSION_V1",
+  "git_code_commit": "6dae7a39caa2ffadb6d1bc097fefa5977bf1beb2",
+  "golden_reference_sha256": "305b42ede86bf077969f404464a78e3e2f0f42117102e7414fac61f0ed43542d",
+  "model_name": "DIXON_COLES_V1",
+  "model_payload_sha256": "f9c611df00b049354d8fefd05f079332a3652f575fdbbcc1df8162c41c0ff959",
+  "model_snapshot_id": "R3-6b3be79a95e62113a7566e20d21d645d",
+  "model_version": "1.0.0",
+  "production_ready": false,
+  "r3_derivation_version": "R3_SCORE_MATRIX_DERIVATION_V1",
+  "required_packages": {
+    "duckdb": "1.5.6",
+    "httpx": "0.28.1",
+    "joblib": "1.6.0",
+    "numpy": "2.3.5",
+    "pandas": "3.0.6",
+    "penaltyblog": "1.12.2",
+    "pydantic": "2.13.5",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.17.1"
+  },
+  "required_python": ">=3.11,<3.12",
+  "schema_version": "USER_DAILY_SLATE_V1",
+  "selection_version": "R3_SELECTION_ENGINE_V1",
+  "validation": {
+    "daily_run_pass": true,
+    "golden_reference_pass": true,
+    "init_state_pass": true,
+    "install_pass": true,
+    "mypy_pass": true,
+    "no_absolute_windows_path": true,
+    "pytest": "298 passed, 3 skipped",
+    "ruff_pass": true
+  },
+  "yy_core_version": "0.1.0"
+}

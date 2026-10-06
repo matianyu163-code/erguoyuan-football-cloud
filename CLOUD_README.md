@@ -14,6 +14,7 @@ fixture input and version metadata modules remain for headless compatibility.
    suite covers blind-test, market, model, point-in-time and core unit tests.
    The wider development suite remains available in the archive; those tests
    need historical development files that are intentionally absent here.
+   `python scripts/check_cloud_readiness.py` runs the full local Cloud gate.
 5. Put a user-supplied daily JSON in `inputs/daily_market/`. The required fields
    are `slate_date`, `source: USER_AUTHORITATIVE`, and a nonempty `fixtures` list.
    Each fixture needs `jc_match_number`, `competition`, teams, timezone-aware
