@@ -2,7 +2,7 @@
   "build": "CLOUD_CLEAN_BUILD_V1",
   "cloud_ready": true,
   "fusion_version": "MODEL_MARKET_FUSION_V1",
-  "git_code_commit": "6dae7a39caa2ffadb6d1bc097fefa5977bf1beb2",
+  "git_code_commit": "5c907599de869e5f77d9356f9092c2c2a2dbdcd9",
   "golden_reference_sha256": "305b42ede86bf077969f404464a78e3e2f0f42117102e7414fac61f0ed43542d",
   "model_name": "DIXON_COLES_V1",
   "model_payload_sha256": "f9c611df00b049354d8fefd05f079332a3652f575fdbbcc1df8162c41c0ff959",
