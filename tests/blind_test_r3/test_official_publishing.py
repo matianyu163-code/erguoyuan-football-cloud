@@ -153,12 +153,25 @@ def test_only_locked_official_result_can_enter_r3_oos() -> None:
                    "input_snapshot_sha256": "SYNTHETIC_TEST_HASH"}
     assert not oos_eligibility(publication, result_verified=True)["r3_oos_eligible"]
     publication.update(publish_level="FROZEN_BLIND_TEST",
-                       result_status="OFFICIAL_BLIND_TEST")
+                       result_status="OFFICIAL_BLIND_TEST",
+                       r3_official_blind_test=True,
+                       model_probabilities={"HOME": 0.5, "DRAW": 0.3, "AWAY": 0.2})
     assert not oos_eligibility(publication, result_verified=False)["r3_oos_eligible"]
     result = oos_eligibility(publication, result_verified=True)
     assert result["r3_oos_eligible"]
     assert not result["phase9_golden_holdout_promoted"]
     assert not evaluate_production_gate({"golden_oos": True})["production_eligible"]
+
+
+def test_model_failure_not_counted_in_brier() -> None:
+    failure = {"record_type": "MODEL_EXECUTION_FAILURE_AUDIT",
+               "result_status": "MODEL_EXECUTION_FAILED",
+               "r3_official_blind_test": False, "model_probabilities": None,
+               "publish_level": "FROZEN_BLIND_TEST", "lock_status": "LOCKED",
+               "input_snapshot_sha256": "SYNTHETIC_TEST_HASH"}
+    eligibility = oos_eligibility(failure, result_verified=True)
+    assert eligibility["r3_oos_eligible"] is False
+    assert eligibility["reason"] == "MODEL_EXECUTION_FAILURE_NOT_SCOREABLE"
 
 
 def test_verified_result_and_r3_oos_are_append_only_after_kickoff(

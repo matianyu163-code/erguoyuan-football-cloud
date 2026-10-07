@@ -91,6 +91,13 @@ def blind_test_gate(record: dict[str, Any], frozen: dict[str, Any],
 
 def oos_eligibility(publication: dict[str, Any], *, result_verified: bool) -> dict[str, Any]:
     """Permit independently verified R3 blind tests in the R3 OOS ledger."""
+    if (publication.get("record_type") == "MODEL_EXECUTION_FAILURE_AUDIT" or
+            publication.get("result_status") == "MODEL_EXECUTION_FAILED" or
+            publication.get("r3_official_blind_test") is False or
+            publication.get("model_probabilities") is None):
+        return {"r3_oos_eligible": False,
+                "phase9_golden_holdout_promoted": False,
+                "reason": "MODEL_EXECUTION_FAILURE_NOT_SCOREABLE"}
     level = publication.get("publish_level")
     status = publication.get("result_status")
     eligible = level in ("FROZEN_BLIND_TEST", "PRODUCTION") and (

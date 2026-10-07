@@ -49,19 +49,30 @@ class UserFixture(BaseModel):
     competition: str = Field(min_length=1)
     home_team: str = Field(min_length=1)
     away_team: str = Field(min_length=1)
-    kickoff: datetime
+    kickoff: datetime | None = None
     neutral_venue: bool | None = None
-    spf: OddsTriple
+    spf: OddsTriple | None = None
     rqspf: HandicapOdds
     screenshot_path: str | None = None
+    market_observed_at: datetime | None = None
     metadata_sources: dict[str, str] = Field(default_factory=dict)
+    external_research_warnings: list[str] = Field(default_factory=list)
 
     @field_validator("kickoff")
     @classmethod
-    def aware_kickoff(cls, value: datetime) -> datetime:
+    def aware_kickoff(cls, value: datetime | None) -> datetime | None:
+        if value is None:
+            return None
         if value.tzinfo is None or value.utcoffset() is None:
             raise ValueError("KICKOFF_TIMEZONE_REQUIRED")
         return value.astimezone(UTC)
+
+    @field_validator("market_observed_at")
+    @classmethod
+    def aware_market_observation(cls, value: datetime | None) -> datetime | None:
+        if value is not None and (value.tzinfo is None or value.utcoffset() is None):
+            raise ValueError("MARKET_OBSERVATION_TIMEZONE_REQUIRED")
+        return value.astimezone(UTC) if value is not None else None
 
     @model_validator(mode="after")
     def distinct_teams(self) -> UserFixture:
@@ -70,9 +81,9 @@ class UserFixture(BaseModel):
         return self
 
     def fixture_id(self, slate_date: date) -> str:
+        kickoff = self.kickoff.isoformat() if self.kickoff else "KICKOFF_UNAVAILABLE"
         identity = (f"{slate_date.isoformat()}|{self.jc_match_number.strip()}|"
-                    f"{self.home_team.strip()}|{self.away_team.strip()}|"
-                    f"{self.kickoff.isoformat()}")
+                    f"{self.home_team.strip()}|{self.away_team.strip()}|{kickoff}")
         return "YYF-" + hashlib.sha256(identity.encode("utf-8")).hexdigest()[:24]
 
 

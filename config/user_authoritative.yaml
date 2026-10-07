@@ -4,5 +4,11 @@ input_policy:
   require_fixture_reverification: false
   require_market_reverification: false
   require_second_confirmation: false
+  public_schedule_conflict: WARNING_ONLY
+  unparseable_input_rejected: true
+market_source:
+  source: USER_CONFIRMED_MARKET
+  source_authority: USER_AUTHORITATIVE
+  external_verification_required: false
 external_research_mode: OPTIONAL_ENRICHMENT
 web_scraping: PAUSED

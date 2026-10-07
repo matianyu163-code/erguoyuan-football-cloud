@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "verified_at": "2026-10-07T08:16:25+00:00",
+  "verification_script": "scripts/verify_r3_cloud_portability.py",
+  "copy_method": "CLEAN_TEMPORARY_PROJECT_COPY",
+  "package_install_method": "ISOLATED_SOURCE_PACKAGE_COPY",
+  "python_version": "3.11",
+  "dependency_check": "PASS",
+  "fresh_dependency_reinstallation": false,
+  "verified_release_load": "PASS",
+  "models_loaded": [
+    "DIXON_COLES_V1",
+    "CLUB_ELO_BRAZIL_V1",
+    "CLUB_DIXON_COLES_BRAZIL_V1",
+    "CLUB_BIVARIATE_POISSON_BRAZIL_V1"
+  ],
+  "golden_brazil_club_001_002": "PASS",
+  "synthetic_brazil_prediction": "PASS",
+  "sample_run_version": "BRAZIL_RELEASE_V1",
+  "original_project_source_dependency": false,
+  "git_clone_test": "NOT_RUN_NO_REMOTE_AVAILABLE",
+  "codex_cloud_environment": "NOT_CONFIGURED"
+}

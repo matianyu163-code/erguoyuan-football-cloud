@@ -1,0 +1,27 @@
+{
+  "model_id": "CLUB_BIVARIATE_POISSON_BRAZIL_V1",
+  "model_version": "1.0.0",
+  "code_version": "UNVERSIONED_SOURCE_TREE",
+  "trained_until": "2026-06-01T00:00:00Z",
+  "training_data_hash": "29243741595acb99aae571144eaea580bb4439aa05b65f326749c677066c8a56",
+  "config_hash": "42dbfa9c0332c50052966da1735fe6019cc8fdac532a8d3d92c52c734c55ceab",
+  "created_at": "2026-10-07T05:53:25.348296Z",
+  "artifact_path": "cloud_release/models/club_brazil/club_bivariate_poisson_brazil_v1/artifact",
+  "payload_sha256": "cb69dc21346da933f745b793488f18b2dd1fb450250a351b4dc6dccfccd09492",
+  "dependencies": {
+    "penaltyblog": "1.12.2",
+    "numpy": "2.3.5",
+    "pandas": "3.0.6",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.9.1",
+    "joblib": "1.6.0",
+    "pydantic": "2.13.5",
+    "duckdb": "1.5.6",
+    "httpx": "0.28.1"
+  },
+  "state_process": null,
+  "time_index_version": null,
+  "posterior_method": null,
+  "sampling_diagnostics": {},
+  "state_history_count": null
+}

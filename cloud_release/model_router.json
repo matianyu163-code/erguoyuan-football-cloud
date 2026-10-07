@@ -1,20 +1,25 @@
 {
-  "build": "YY_CORE_R3_MULTI_MODEL_CLOUD_V2",
-  "release_id": "R3_RELEASE_V2_BRAZIL_20261007",
-  "release_sha256": "a528a9e777aaa35961bf70a993417b93767dd4e4c5bfc2149756bdfc6bbe57da",
-  "blind_test_ready": true,
-  "production_ready": false,
-  "cloud_portable": true,
-  "codex_cloud_environment_ready": false,
-  "mobile_ready": false,
-  "cloud_readiness_gate": "PASS",
-  "run_version": "BRAZIL_RELEASE_V1",
-  "model_ensemble": "EQUAL_WEIGHT_AVAILABLE_MODELS_V1",
-  "registered_models": [
+  "router_version": "BRAZIL_RELEASE_V1",
+  "minimum_available_models": 1,
+  "ensemble_method": "EQUAL_WEIGHT_AVAILABLE_MODELS_V1",
+  "competition_aliases": {
+    "BRAZIL_SERIE_A": [
+      "BRA Serie A",
+      "Brazil Serie A",
+      "Campeonato Brasileiro Série A",
+      "Brasileirão Série A",
+      "巴甲",
+      "巴西甲级联赛"
+    ]
+  },
+  "models": [
     {
       "model_id": "DIXON_COLES_V1",
       "model_version": "1.0.0",
       "domain": "NATIONAL_TEAM",
+      "competition_scope": [
+        "NATIONAL_TEAM"
+      ],
       "artifact_id": "R3-6b3be79a95e62113a7566e20d21d645d:DIXON_COLES_V1",
       "artifact_sha256": "f9c611df00b049354d8fefd05f079332a3652f575fdbbcc1df8162c41c0ff959"
     },
@@ -22,7 +27,9 @@
       "model_id": "CLUB_ELO_BRAZIL_V1",
       "model_version": "1.0.0",
       "domain": "CLUB",
-      "competition_scope": ["BRAZIL_SERIE_A"],
+      "competition_scope": [
+        "BRAZIL_SERIE_A"
+      ],
       "artifact_id": "R3-BRAZIL-07a4099b742f1d7e6f5b0873:CLUB_ELO_BRAZIL_V1",
       "artifact_sha256": "ceb94b14121615d1c3a46635fa39b47ebbdec2ac7d98662e7d4ab8fe5aa32cb1"
     },
@@ -30,7 +37,9 @@
       "model_id": "CLUB_DIXON_COLES_BRAZIL_V1",
       "model_version": "1.0.0",
       "domain": "CLUB",
-      "competition_scope": ["BRAZIL_SERIE_A"],
+      "competition_scope": [
+        "BRAZIL_SERIE_A"
+      ],
       "artifact_id": "R3-BRAZIL-07a4099b742f1d7e6f5b0873:CLUB_DIXON_COLES_BRAZIL_V1",
       "artifact_sha256": "a8ccc9590b0278068bae27b89764f9545d803e1ac6ccef72abd7e07ad52a7b5e"
     },
@@ -38,18 +47,16 @@
       "model_id": "CLUB_BIVARIATE_POISSON_BRAZIL_V1",
       "model_version": "1.0.0",
       "domain": "CLUB",
-      "competition_scope": ["BRAZIL_SERIE_A"],
+      "competition_scope": [
+        "BRAZIL_SERIE_A"
+      ],
       "artifact_id": "R3-BRAZIL-07a4099b742f1d7e6f5b0873:CLUB_BIVARIATE_POISSON_BRAZIL_V1",
       "artifact_sha256": "cb69dc21346da933f745b793488f18b2dd1fb450250a351b4dc6dccfccd09492"
     }
   ],
-  "fusion_version": "MODEL_MARKET_FUSION_V1",
-  "tests": {
-    "pytest": "316 passed, 3 skipped",
-    "ruff": "PASS",
-    "mypy": "PASS",
-    "golden_national": "PASS",
-    "golden_brazil_club_001_002": "PASS",
-    "clean_copy_portability": "PASS"
+  "unregistered_domains": {
+    "CLUB_EUROPE": "NO_FROZEN_RELEASE_ARTIFACT",
+    "CLUB_ASIA": "NO_FROZEN_RELEASE_ARTIFACT",
+    "UNIVERSAL": "NO_FROZEN_UNIVERSAL_MODEL_ARTIFACT"
   }
 }

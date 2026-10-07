@@ -55,8 +55,9 @@ def test_strict_odds_and_complete_hda(tmp_path: Path) -> None:
 
 def test_frozen_artifact_load_and_no_runtime_fit(monkeypatch: pytest.MonkeyPatch,
                                                  tmp_path: Path) -> None:
-    model, release, _ = _verify_release(ROOT)
-    assert model.fitted and release["source_snapshot_id"].startswith("R3-")
+    release, _ = _verify_release(ROOT)
+    model = release["loaded_models"]["DIXON_COLES_V1"]
+    assert model.fitted and release["release_id"].startswith("R3_RELEASE_V2")
 
     def forbidden_fit(*_args: object, **_kwargs: object) -> None:
         raise AssertionError("RUNTIME_FIT_FORBIDDEN")
@@ -78,6 +79,100 @@ def test_frozen_artifact_load_and_no_runtime_fit(monkeypatch: pytest.MonkeyPatch
     assert (tmp_path / "state/locks" /
             f"{result['final_output_lock_id']}.json").exists()
     assert result["selection_engine"]["total_goals_duplex"]["status"] == "AVAILABLE"
+
+
+def test_missing_spf_does_not_block_frozen_model_or_rqspf(tmp_path: Path) -> None:
+    data = json.loads(_synthetic_slate(tmp_path).read_text(encoding="utf-8"))
+    data["fixtures"][0]["spf"] = None
+    path = tmp_path / "missing_spf.json"
+    path.write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
+
+    result = run_daily(path, state_root=tmp_path / "state")
+    row = result["results"][0]
+    assert row["model_status"] == "AVAILABLE"
+    assert row["r3"]["one_x_two"]["probabilities"]
+    assert row["r5"]["SPF"]["status"] == "UNAVAILABLE"
+    assert row["fusion"]["mode"] == "MODEL_ONLY"
+    assert row["handicap_fusion"]["mode"] == "MODEL_MARKET"
+
+
+def test_user_fixture_not_rejected_by_public_conflict(tmp_path: Path) -> None:
+    data = json.loads(_synthetic_slate(tmp_path).read_text(encoding="utf-8"))
+    data["fixtures"][0]["external_research_warnings"] = ["PUBLIC_SCHEDULE_CONFLICT"]
+    path = tmp_path / "conflicting_research.json"
+    path.write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
+
+    result = run_daily(path, state_root=tmp_path / "state")
+
+    assert result["total_user_fixtures"] == 1
+    assert result["total_processed"] == 1
+    assert result["input_rejected"] == 0
+    row = result["results"][0]
+    assert row["model_status"] == "AVAILABLE"
+    prediction = json.loads((tmp_path / "state/predictions" /
+                             f"{row['prediction_id']}.json").read_text(encoding="utf-8"))
+    assert prediction["external_research_warning"] == ["PUBLIC_SCHEDULE_CONFLICT"]
+
+
+def test_user_market_does_not_require_web_verification(tmp_path: Path) -> None:
+    result = run_daily(_synthetic_slate(tmp_path), state_root=tmp_path / "state")
+    row = result["results"][0]
+    prediction = json.loads((tmp_path / "state/predictions" /
+                             f"{row['prediction_id']}.json").read_text(encoding="utf-8"))
+
+    assert prediction["user_authoritative_input"] is True
+    assert prediction["fixture_reverification"] is False
+    assert prediction["market_reverification"] is False
+    assert prediction["market_verified_external"] is False
+    assert prediction["jc_market"]["odds"]["SPF"]["home"] == 1.85
+    assert row["fusion"]["mode"] == "MODEL_MARKET"
+
+
+def test_club_fixture_routes_to_registered_brazil_artifacts(tmp_path: Path) -> None:
+    data = json.loads(_synthetic_slate(tmp_path).read_text(encoding="utf-8"))
+    item = data["fixtures"][0]
+    item.update(home_team="Botafogo", away_team="Vasco da Gama",
+                competition="Campeonato Brasileiro Série A")
+    path = tmp_path / "club_synthetic.json"
+    path.write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
+
+    result = run_daily(path, state_root=tmp_path / "state")
+
+    assert result["total_processed"] == 1
+    assert result["official_r3_predictions"] == 1
+    row = result["results"][0]
+    assert row["match_domain"] == "CLUB"
+    assert len(row["available_models"]) == 3
+    assert row["model_coverage"] == "FULL"
+    assert row["model_status"] == "AVAILABLE"
+    assert row["prediction_id"] is not None
+    assert row["failure_audit_id"] is None
+    prediction = json.loads((tmp_path / "state/predictions" /
+                             f"{row['prediction_id']}.json").read_text(encoding="utf-8"))
+    assert set(prediction["individual_model_probabilities"]) == set(row["available_models"])
+    assert prediction["r3"]["score_matrix"]["max_goals"] == 10
+
+
+def test_all_user_slate_fixtures_processed_including_unknown_domain(tmp_path: Path) -> None:
+    data = json.loads(_synthetic_slate(tmp_path).read_text(encoding="utf-8"))
+    original = data["fixtures"][0]
+    second = json.loads(json.dumps(original))
+    second.update(jc_match_number="SYNTHETIC_TEST_CLUB", home_team="Remo",
+                  away_team="Grêmio", competition="Campeonato Brasileiro Série A")
+    third = json.loads(json.dumps(original))
+    third.update(jc_match_number="SYNTHETIC_TEST_UNKNOWN", home_team="Unknown Alpha",
+                 away_team="Unknown Beta", competition="Unclassified Competition")
+    data["fixtures"].extend([second, third])
+    path = tmp_path / "three_fixture_synthetic.json"
+    path.write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
+
+    result = run_daily(path, state_root=tmp_path / "state")
+
+    assert result["total_user_fixtures"] == 3
+    assert result["total_processed"] == 3
+    assert result["input_rejected"] == 0
+    assert [row["match_domain"] for row in result["results"]] == [
+        "NATIONAL_TEAM", "CLUB", "UNKNOWN"]
 
 
 def test_market_and_lock_append_only(tmp_path: Path) -> None:

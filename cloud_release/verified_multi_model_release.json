@@ -1,0 +1,140 @@
+{
+  "release_version": "R3_RELEASE_V2",
+  "release_id": "R3_RELEASE_V2_BRAZIL_20261007",
+  "release_status": "VERIFIED_BLIND_TEST_RELEASE",
+  "production_ready": false,
+  "blind_test_ready": true,
+  "model_ensemble_method": "EQUAL_WEIGHT_AVAILABLE_MODELS_V1",
+  "models": [
+    {
+      "model_id": "DIXON_COLES_V1",
+      "model_name": "National Dixon-Coles",
+      "model_version": "1.0.0",
+      "domain": "NATIONAL_TEAM",
+      "competition_scope": [
+        "NATIONAL_TEAM"
+      ],
+      "artifact_id": "R3-6b3be79a95e62113a7566e20d21d645d:DIXON_COLES_V1",
+      "artifact_sha256": "f9c611df00b049354d8fefd05f079332a3652f575fdbbcc1df8162c41c0ff959",
+      "artifact_manifest_sha256": "46296583c3a31b21583d5157fb7d17a7edf6a73c356784ba501952c33130ee10",
+      "artifact_path": "cloud_release/model",
+      "training_cutoff": "2026-03-31",
+      "data_as_of": "2026-10-05T06:18:45.401196+00:00",
+      "date_safe": true,
+      "training_match_count": 1589,
+      "team_count": 213,
+      "training_data_hash": "457c550e0bcc547056bafcc3c9c578f7af6dddc663551b70ad3c5102edeac3a7",
+      "data_manifest_path": "cloud_release/models/national_training_lineage.json",
+      "data_manifest_sha256": "82dd9908a3d94259bf178899474eccdd222952e4737d4bf686deeb966c5e516d",
+      "schema": "ModelArtifact/1",
+      "golden_reference_status": "PASS"
+    },
+    {
+      "model_id": "CLUB_ELO_BRAZIL_V1",
+      "model_name": "Brazil Serie A Elo",
+      "model_version": "1.0.0",
+      "domain": "CLUB",
+      "competition_scope": [
+        "BRAZIL_SERIE_A"
+      ],
+      "artifact_id": "R3-BRAZIL-07a4099b742f1d7e6f5b0873:CLUB_ELO_BRAZIL_V1",
+      "artifact_sha256": "ceb94b14121615d1c3a46635fa39b47ebbdec2ac7d98662e7d4ab8fe5aa32cb1",
+      "artifact_manifest_sha256": "05d4389ea6d11f7e6dc9867cf02d6d0f11a3e28369318fd3a972c9160ca6275e",
+      "artifact_path": "cloud_release/models/club_brazil/club_elo_brazil_v1/artifact",
+      "training_cutoff": "2026-06-01",
+      "data_as_of": "2026-06-01T00:00:00+00:00",
+      "date_safe": true,
+      "training_match_count": 1237,
+      "team_count": 29,
+      "training_data_hash": "29243741595acb99aae571144eaea580bb4439aa05b65f326749c677066c8a56",
+      "schema": "ModelArtifact/1",
+      "golden_reference_status": "PASS",
+      "data_manifest_path": "cloud_release/models/club_brazil/manifest_R3-BRAZIL-07a4099b742f1d7e6f5b0873.json",
+      "data_manifest_sha256": "d5c2828bb600eda084883e1a992d9b03796d917a9af5b3fd8a64a64b0008978a"
+    },
+    {
+      "model_id": "CLUB_DIXON_COLES_BRAZIL_V1",
+      "model_name": "Brazil Serie A Dixon-Coles",
+      "model_version": "1.0.0",
+      "domain": "CLUB",
+      "competition_scope": [
+        "BRAZIL_SERIE_A"
+      ],
+      "artifact_id": "R3-BRAZIL-07a4099b742f1d7e6f5b0873:CLUB_DIXON_COLES_BRAZIL_V1",
+      "artifact_sha256": "a8ccc9590b0278068bae27b89764f9545d803e1ac6ccef72abd7e07ad52a7b5e",
+      "artifact_manifest_sha256": "158b0013e94b896887dff0b6d998d78f6676463eb7c571faad14e940cb4318b3",
+      "artifact_path": "cloud_release/models/club_brazil/club_dixon_coles_brazil_v1/artifact",
+      "training_cutoff": "2026-06-01",
+      "data_as_of": "2026-06-01T00:00:00+00:00",
+      "date_safe": true,
+      "training_match_count": 1237,
+      "team_count": 29,
+      "training_data_hash": "29243741595acb99aae571144eaea580bb4439aa05b65f326749c677066c8a56",
+      "schema": "ModelArtifact/1",
+      "golden_reference_status": "PASS",
+      "data_manifest_path": "cloud_release/models/club_brazil/manifest_R3-BRAZIL-07a4099b742f1d7e6f5b0873.json",
+      "data_manifest_sha256": "d5c2828bb600eda084883e1a992d9b03796d917a9af5b3fd8a64a64b0008978a"
+    },
+    {
+      "model_id": "CLUB_BIVARIATE_POISSON_BRAZIL_V1",
+      "model_name": "Brazil Serie A Bivariate Poisson",
+      "model_version": "1.0.0",
+      "domain": "CLUB",
+      "competition_scope": [
+        "BRAZIL_SERIE_A"
+      ],
+      "artifact_id": "R3-BRAZIL-07a4099b742f1d7e6f5b0873:CLUB_BIVARIATE_POISSON_BRAZIL_V1",
+      "artifact_sha256": "cb69dc21346da933f745b793488f18b2dd1fb450250a351b4dc6dccfccd09492",
+      "artifact_manifest_sha256": "e8b0da364fdaab43d68601e4ce0871e6508ac2c0a9e9b5089e0148ceed7901fe",
+      "artifact_path": "cloud_release/models/club_brazil/club_bivariate_poisson_brazil_v1/artifact",
+      "training_cutoff": "2026-06-01",
+      "data_as_of": "2026-06-01T00:00:00+00:00",
+      "date_safe": true,
+      "training_match_count": 1237,
+      "team_count": 29,
+      "training_data_hash": "29243741595acb99aae571144eaea580bb4439aa05b65f326749c677066c8a56",
+      "schema": "ModelArtifact/1",
+      "golden_reference_status": "PASS",
+      "data_manifest_path": "cloud_release/models/club_brazil/manifest_R3-BRAZIL-07a4099b742f1d7e6f5b0873.json",
+      "data_manifest_sha256": "d5c2828bb600eda084883e1a992d9b03796d917a9af5b3fd8a64a64b0008978a"
+    }
+  ],
+  "brazil_snapshot_id": "R3-BRAZIL-07a4099b742f1d7e6f5b0873",
+  "brazil_snapshot_manifest": "cloud_release/models/club_brazil/manifest_R3-BRAZIL-07a4099b742f1d7e6f5b0873.json",
+  "team_mapping_path": "cloud_release/models/club_brazil/BRAZIL_CLUB_TEAM_MAP_V1.json",
+  "team_mapping_sha256": "4ef8d6a93fe7905920446005cb5bfbddf1c075f89b585308fde582bc3af620e2",
+  "cloud_portability_receipt": "cloud_release/CLOUD_PORTABILITY_VERIFICATION.json",
+  "cloud_portability_receipt_sha256": "4edb64988f2a667d38734f25d5ef2986ca1752cd59ce79bb80ee6d143f55fb21",
+  "cloud_portable": true,
+  "golden_references": [
+    "GOLDEN_BRAZIL_CLUB_001",
+    "GOLDEN_BRAZIL_CLUB_002"
+  ],
+  "golden_reference_status": "PASS",
+  "code_paths": {
+    "runner": "src/erguoyuan_football/blind_test_r3/user_daily_runner.py",
+    "release_registry": "src/erguoyuan_football/blind_test_r3/release_registry.py",
+    "capability": "src/erguoyuan_football/blind_test_r3/capability.py",
+    "club_wrappers": "src/erguoyuan_football/blind_test_r3/club_brazil.py",
+    "model_domain": "src/erguoyuan_football/blind_test_r3/model_domain.py",
+    "derivation": "src/erguoyuan_football/blind_test_r3/derivation.py",
+    "elo_source": "src/erguoyuan_football/models/elo.py",
+    "dixon_coles_source": "src/erguoyuan_football/models/dixon_coles.py",
+    "bivariate_poisson_source": "src/erguoyuan_football/models/bivariate_poisson.py",
+    "score_matrix_source": "src/erguoyuan_football/models/score_matrix.py"
+  },
+  "code_sha256": {
+    "runner": "31b8fc40acc206ef208e84d97789387c843e2ec7261f7b28924b87cff72f9a30",
+    "release_registry": "f1ac774fa917c94697e7d21d9b77168a9625d344ac76829d03e2f054fd76a956",
+    "capability": "baeb2135e4cf1f64d141e9512886ba708939b023c85699bf114644da9630fd98",
+    "club_wrappers": "deb1d25cf7dece52cbffa129214022cb99fd65f3f4be36d6915fecf841ee3a42",
+    "model_domain": "3e8709cd604cad278934f1a3db40d5a4387dd9716601b7d24ee197974259589d",
+    "derivation": "bafdccba11f81a4aeafd5e457e8d47f862bd5aea22fc2038593a3d8ada8d92cf",
+    "elo_source": "b163f1b60382d04f34dc9be80c376bc892b68a514a4b162b7051f1638e2c9ef8",
+    "dixon_coles_source": "8235b2529a8e82b4314794bf0ef65325cf307493fbb1014982ae5bb04e784700",
+    "bivariate_poisson_source": "2775d77bc797b49bac2b2c0ad37d5936d7ceca6560510c934222cc26fcee2282",
+    "score_matrix_source": "b2d1db827c026386149ad0807c79cfc07d6c468043bc09d3897df9700addf6b3"
+  },
+  "created_at": "2026-10-07T00:00:00+00:00",
+  "release_sha256": "a528a9e777aaa35961bf70a993417b93767dd4e4c5bfc2149756bdfc6bbe57da"
+}

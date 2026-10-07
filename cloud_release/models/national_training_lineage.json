@@ -1,0 +1,25 @@
+{
+  "lineage_type": "FROZEN_MODEL_TRAINING_LINEAGE",
+  "model_id": "DIXON_COLES_V1",
+  "model_version": "1.0.0",
+  "training_data_hash": "457c550e0bcc547056bafcc3c9c578f7af6dddc663551b70ad3c5102edeac3a7",
+  "training_cutoff": "2026-03-31",
+  "artifact_trained_until": "2026-10-05T06:18:45.401196+00:00",
+  "training_match_count": 1589,
+  "training_team_count": 213,
+  "source_ids": [
+    "MARTJ42_INTERNATIONAL_RESULTS_GITHUB_V1"
+  ],
+  "competition_ids": [
+    "SENIOR_MENS_INTERNATIONAL"
+  ],
+  "temporal_mode": "DATE_SAFE_BATCH",
+  "date_safe": true,
+  "training_assumptions": [
+    "DATE_ONLY_NO_KICKOFF_IN_SOURCE",
+    "CUP_AND_UNCLASSIFIED_EXCLUDED_TO_AVOID_EXTRA_TIME_SCORE_MISMATCH",
+    "NATIONS_LEAGUE_FINALS_EXTRA_TIME_NOT_INDEPENDENTLY_IDENTIFIED",
+    "FRIENDLIES_EXCLUDED"
+  ],
+  "artifact_sha256": "f9c611df00b049354d8fefd05f079332a3652f575fdbbcc1df8162c41c0ff959"
+}

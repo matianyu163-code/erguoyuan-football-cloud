@@ -2,6 +2,7 @@
 
 import json
 import math
+import subprocess
 import sys
 from datetime import datetime
 from pathlib import Path
@@ -20,8 +21,11 @@ def main() -> int:
     root = Path(__file__).resolve().parents[1]
     reference = json.loads((root / "tests/reference/GOLDEN_REFERENCE_001.json")
                            .read_text(encoding="utf-8"))
-    model, release, policy = _verify_release(root)
-    if release["source_snapshot_id"] != reference["model_snapshot_id"]:
+    release, policy = _verify_release(root)
+    model = release["loaded_models"]["DIXON_COLES_V1"]
+    national_release = next(row for row in release["models"]
+                            if row["model_id"] == "DIXON_COLES_V1")
+    if not national_release["artifact_id"].startswith(reference["model_snapshot_id"]):
         raise ValueError("GOLDEN_MODEL_SNAPSHOT_CHANGED")
     fixture = UserFixture.model_validate(reference["fixture_input"])
     raw, standard = _model_output(model, fixture, reference["fixture_id"],
@@ -38,7 +42,13 @@ def main() -> int:
             raise ValueError("GOLDEN_REFERENCE_PROBABILITY_MISMATCH")
     if raw["execution_status"] != "SUCCESS":
         raise ValueError("GOLDEN_MODEL_EXECUTION_FAILED")
-    print("GOLDEN_REFERENCE_PASS")
+    completed = subprocess.run(
+        [sys.executable, "-m", "pytest", "tests/blind_test_r3/test_release_registry.py", "-q"],
+        cwd=root, check=False, capture_output=True, text=True)
+    if completed.returncode:
+        raise RuntimeError(f"GOLDEN_BRAZIL_CLUB_FAILED:{completed.stdout[-1200:]}")
+    print("GOLDEN_NATIONAL_PASS")
+    print("GOLDEN_BRAZIL_CLUB_001_002_PASS")
     return 0
 
 
